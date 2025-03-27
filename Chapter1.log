@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.26)  27 MAR 2025 00:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.3.26)  27 MAR 2025 02:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -277,31 +277,72 @@ Package: array 2024/10/17 v2.6g Tabular extension package (FMi)
 \everycr=\toks26
 \minrowclearance=\skip58
 \rownum=\count300
-) (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+) (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/nomencl\nomencl.sty
+Package: nomencl 2021/11/10 v5.6 Nomenclature package
+ (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+ (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks27
+\XKV@tempa@toks=\toks28
+)
+\XKV@depth=\count301
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+) (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\tocbasic.sty
+Package: tocbasic 2024/10/24 v3.43 KOMA-Script package (handling toc-files)
+ (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrbase.sty
+Package: scrbase 2024/10/24 v3.43 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile.sty
+Package: scrlfile 2024/10/24 v3.43 KOMA-Script package (file load hooks)
+ (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlfile-hook.sty
+Package: scrlfile-hook 2024/10/24 v3.43 KOMA-Script package (using LaTeX hooks)
+ (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scrlogo.sty
+Package: scrlogo 2024/10/24 v3.43 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line 370.
+)
+\scr@dte@tocline@numberwidth=\skip59
+\scr@dte@tocline@numbox=\box57
+)
+Package tocbasic Info: omitting babel extension for `nlo'
+(tocbasic)             because of missing \bbl@set@language on input line 187.
+Package tocbasic Info: omitting babel extension for `nls'
+(tocbasic)             because of missing \bbl@set@language on input line 188.
+\nomlabelwidth=\dimen168
+\nom@tempdim=\dimen169
+\nomitemsep=\skip60
+)
+\@nomenclaturefile=\write3
+\openout3 = `Chapter1.nlo'.
+
+Package nomencl Info: Writing nomenclature file Chapter1.nlo on input line 13.
+ (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count301
-\l__pdf_internal_box=\box57
+\l__color_backend_stack_int=\count302
+\l__pdf_internal_box=\box58
 ) (Chapter1.aux)
 \openout1 = `Chapter1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -339,40 +380,40 @@ LaTeX Font Info:    ... okay on input line 12.
 
 (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count302
-\scratchdimen=\dimen168
-\scratchbox=\box58
-\nofMPsegments=\count303
-\nofMParguments=\count304
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count305
-\MPscratchDim=\dimen169
-\MPnumerator=\count306
-\makeMPintoPDFobject=\count307
-\everyMPtoPDFconversion=\toks28
+\scratchcounter=\count303
+\scratchdimen=\dimen170
+\scratchbox=\box59
+\nofMPsegments=\count304
+\nofMParguments=\count305
+\everyMPshowfont=\toks29
+\MPscratchCnt=\count306
+\MPscratchDim=\dimen171
+\MPnumerator=\count307
+\makeMPintoPDFobject=\count308
+\everyMPtoPDFconversion=\toks30
 ) (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 12.
+Package hyperref Info: Link coloring OFF on input line 15.
  (Chapter1.out) (Chapter1.out)
-\@outlinefile=\write3
-\openout3 = `Chapter1.out'.
+\@outlinefile=\write4
+\openout4 = `Chapter1.out'.
 
-<figure/PPU.png, id=15, 602.25pt x 301.125pt>
+<figure/PPU.png, id=55, 602.25pt x 301.125pt>
 File: figure/PPU.png Graphic file (type png)
 <use figure/PPU.png>
-Package pdftex.def Info: figure/PPU.png  used on input line 16.
+Package pdftex.def Info: figure/PPU.png  used on input line 20.
 (pdftex.def)             Requested size: 303.53708pt x 151.77515pt.
 
 
 [1
 
 {C:/Users/DELL/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./figure/PPU.png>] (Chapter1.toc)
-\tf@toc=\write4
-\openout4 = `Chapter1.toc'.
+\tf@toc=\write5
+\openout5 = `Chapter1.toc'.
 
 
 
@@ -380,45 +421,113 @@ Package pdftex.def Info: figure/PPU.png  used on input line 16.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.34 \listoffigures
-                    [1
+l.38 \clearpage
+                [1
 
 ] (Chapter1.lof)
-\tf@lof=\write5
-\openout5 = `Chapter1.lof'.
+\tf@lof=\write6
+\openout6 = `Chapter1.lof'.
 
 
 
 [2
 
+
 ] (Chapter1.lot)
-\tf@lot=\write6
-\openout6 = `Chapter1.lot'.
+\tf@lot=\write7
+\openout7 = `Chapter1.lot'.
 
 
 
 [3
 
-] (Chapter1.aux)
+
+]
+No file Chapter1.nls.
+
+
+[4
+
+
+]
+
+[5
+
+
+]
+
+[6
+
+]
+Chapter 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+
+
+[7
+
+]
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 134--135
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--137
+
+ []
+
+<figure/description diagram.jpg, id=129, 796.47563pt x 438.13687pt>
+File: figure/description diagram.jpg Graphic file (type jpg)
+<use figure/description diagram.jpg>
+Package pdftex.def Info: figure/description diagram.jpg  used on input line 140.
+(pdftex.def)             Requested size: 303.53708pt x 166.97508pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+
+[9]
+
+[10 <./figure/description diagram.jpg>] (Chapter1.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `Chapter1.out' has not changed.
-(rerunfilecheck)             Checksum: 0E710063683B6F4839871C3382617834;329.
+(rerunfilecheck)             Checksum: 29D3E79FA03A65F2EF9316AA73797B71;1846.
  ) 
 Here is how much of TeX's memory you used:
- 10698 strings out of 473523
- 166766 string characters out of 5715114
- 579824 words of memory out of 5000000
- 33800 multiletter control sequences out of 15000+600000
- 561000 words of font info for 43 fonts, out of 8000000 for 9000
+ 11942 strings out of 473523
+ 190818 string characters out of 5715114
+ 651991 words of memory out of 5000000
+ 34954 multiletter control sequences out of 15000+600000
+ 564718 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,333b,495s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 110i,6n,107p,806b,582s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/DELL/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Chapter1.pdf (4 pages, 89590 bytes).
+Output written on Chapter1.pdf (11 pages, 200911 bytes).
 PDF statistics:
- 58 PDF objects out of 1000 (max. 8388607)
- 7 named destinations out of 1000 (max. 500000)
- 30 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 179 PDF objects out of 1000 (max. 8388607)
+ 54 named destinations out of 1000 (max. 500000)
+ 115 words of extra memory for PDF output out of 10000 (max. 10000000)
 

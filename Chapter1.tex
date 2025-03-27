@@ -8,8 +8,12 @@
 \usepackage[table]{xcolor} % Required for table coloring
 \usepackage{array}
 \usepackage{colortbl}
+\usepackage[noprefix]{nomencl} % Package to create a list of acronyms
+
+\makenomenclature % Create the nomenclature (list of acronyms)
 
 \begin{document}
+
 
 \begin{titlepage}
     \centering
@@ -27,11 +31,138 @@
     \vfill
 \end{titlepage}
 
+
+
 % Table of Contents
 \tableofcontents
+\clearpage
 
-% List of Figures and Tables
+% List of Figures
 \listoffigures
+\clearpage
+
+% List of Tables
 \listoftables
+\clearpage
+
+% List of Acronyms
+\chapter*{List of Acronyms}
+\addcontentsline{toc}{chapter}{List of Acronyms} % Add to Table of Contents
+\nomenclature{ASD}{Autism Spectrum Disorder}
+
+\printnomenclature
+\clearpage
+
+
+\chapter*{Acknowledgment}
+
+
+\chapter*{Abstract}
+
+\chapter{Introduction}
+
+\section{Preface}
+
+The intelligent stress management and self-regulation system for children with Autism Spectrum Disorder (ASD) is designed to offer real-time, personalized support, helping children navigate emotional challenges and task transitions more smoothly. Autistic children often experience anxiety and disengagement when faced with unexpected changes or overwhelming situations, and traditional methods like verbal cues and static routines may fall short in addressing these immediate needs.\\[0.5cm]
+
+This system improves emotional well-being by recognizing early signs of stress and providing personalized support to help children stay calm and focused. Advanced monitoring and intervention techniques help children build better adjustment skills, enhancing their daily interactions and overall quality of life. Additionally, the integration of structured visual guidance aids in easing task transitions, and minimizing stress and confusion. Ultimately, this project presents an innovative and practical solution, fostering independence and creating a more supportive, engaging environment for autistic children.
+
+\section{Problem Statement}
+
+Children with Autism Spectrum Disorder (ASD) require tailored support to help them manage their emotions, adjust to stress, and transition between activities smoothly. Ideally, they should receive personalized, real-time assistance that aligns with their unique needs, ensuring a peaceful and supportive environment throughout all activities.\\[0.5cm]
+
+Currently, most support systems rely on static methods like verbal prompts, picture schedules, or set routines, which may not effectively address sudden mood shifts. These negative changes often go unnoticed at first, potentially leading to increased stress, frustration, or emotional disengagement. Transitions between tasks can be especially challenging without visual cues, making it even more difficult for children to make seamless adjustments.\\[0.5cm]
+
+In response to these challenges, the proposed project introduces a smart support system designed to detect early signs of distress and provide real-time, tailored interventions. With its auditory prompts, sensory feedback, and interactive visual cues, the system fosters an environment that helps children better regulate their emotions, reduce anxiety, and navigate daily activities with more confidence and ease.
+
+\section{Project Aims and Objectives}
+
+In this project, we propose a system that aims to provide the following features:
+
+\begin{enumerate}
+    \item The system aims to provide real-time emotional support for children with ASD to manage stress and regulate emotions. In order to achieve this aim, the following objectives should be accomplished:
+    \begin{enumerate}[label=(\alph*)]
+        \item Develop a system that continuously monitors the child's emotional and physiological status.
+        \item Incorporate feedback mechanisms (auditory, sensory, and visual) to provide instant interventions based on detected stress levels.
+        \item Ensure seamless communication between the system components for real-time data exchange.
+    \end{enumerate}
+
+    \item The system aims to provide personalized interventions based on the child’s unique emotional and behavioral responses. In order to achieve this aim, the following objectives should be accomplished:
+    \begin{enumerate}[label=(\alph*)]
+        \item Use data analysis techniques for real-time prediction of emotional states and stress levels.
+        \item Create adaptive intervention techniques that customize responses based on the individual needs of the child.
+    \end{enumerate}
+
+    \item The system aims to improve task transitions and time management for children with ASD using visual and auditory aids. In order to achieve this aim, the following objectives should be accomplished:
+    \begin{enumerate}[label=(\alph*)]
+        \item Create a visual system that provides transition cues between activities to help children anticipate changes.
+        \item Use auditory prompts to assist children during transitions and in following routines.
+    \end{enumerate}
+\end{enumerate}
+
+\section{Requirements}
+
+To specify the system requirements, the following functional and non-functional requirements are considered:
+
+\subsection{Functional Requirements}
+
+The system must be able to:
+\begin{enumerate}
+    \item Identify and track signs of emotional discomfort in autistic children.
+    \item Respond immediately through a variety of feedback mechanisms when stress is detected.
+    \item Include a structured method to help children transition between activities.
+    \item Analyze user activity and adapt actions as necessary.
+    \item Provide a facility for caregivers to monitor and track the child's emotional patterns.
+    \item Adapt to the needs of each user.
+    \item Operate in real-time, ensuring timely responses to events causing stress.
+\end{enumerate}
+
+\subsection{Non-Functional Requirements}
+
+\begin{enumerate}
+    \item \textbf{Reliability:} To reduce false detections and guarantee effective actions, the system must operate with a high degree of precision.
+    \item \textbf{Response Time:} To offer help right away, the system must take action with the least amount of delay possible.
+    \item \textbf{Scalability:} The system should be designed to accommodate future improvements and additions without requiring major modifications. This includes expanding AI algorithms to improve response accuracy and incorporating new communication methods between the smartwatch and the interactive display, such as adopting protocols besides Bluetooth or Wi-Fi.
+    \item \textbf{Usability:} Teachers, therapists, and caregivers should be able to easily navigate and use the system interface.
+    \item \textbf{Availability:} To guarantee constant monitoring and intervention, the system should operate constantly with little downtime.
+\end{enumerate}
+
+\section{System Description}
+
+Our system is a wearable device worn on the child’s hand. It is designed to help children with Autism Spectrum Disorder (ASD) regulate their emotions and manage transitions between tasks. The system consists of sensors and interactional components intended to detect early cues that something is troubling them and provide timely support.\\[0.5cm]
+
+The device has a heart rate monitor for sensing pulse changes, a skin conductance sensor to sense the amount of sweat, which is considered an index of stress, and movement sensors that track abnormal movement patterns. All the sensors are reading data in real-time, and this is being processed to recognize signs of emotional disturbance. When stress is detected, the device engages calming mechanisms: a gentle vibration provides soothing feedback to the child, and sounds through the embedded speaker play calming sounds or pre-recorded messages to assist the child in working towards self-regulation.\\[0.5cm]
+
+To assist in transitioning between activities, the wearable has an LED display that shows a countdown timer to help the child anticipate change and thereby reduce anxiety. This is augmented by an external interactive screen that can deliver calming visual and auditory stimuli, including calming animations, guided breathing exercises, or reward-based content. This screen provides another method for emotional regulation, alongside rewards, so that the support can become more immersive and flexible. With ongoing monitoring, adaptive feedback, and structured task-based guidance, the device seeks to impact emotional regulation and daily management routines for children with autism.\\[0.5cm]
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figure/description diagram.jpg}
+    \caption{System Description}
+    \label{fig:system_description}
+\end{figure}
+
+
+\newpage
+\section{Project Limitations/Constraints}
+
+\begin{enumerate}
+
+    \item{Cost Constraint}
+Our system model will simulate real-life conditions for children with Autism Spectrum Disorder (ASD). The proposed solution is designed to closely replicate the required support system. However, it will require more professional, yet expensive components. Due to the high cost of these components, we will design the prototype based on what’s efficient to fit the designed model.
+
+\item{Wireless Connectivity and Detection Range}
+The system depends on Bluetooth or Wi-Fi to connect the smartwatch and the interactive screen. If the connection is weak or the child moves out of range, real-time data transmission and timely interventions might be disrupted.
+
+\item{Power Limitations}
+Since the wearable device runs on battery power, it needs regular recharging. If it isn’t charged in time, the system could temporarily stop monitoring.
+
+\item{Environmental Factors}
+Sensor accuracy might be affected by conditions like temperature, humidity, or background noise, which could make stress detection less reliable in certain situations.
+
+\item{Adaptation Time}
+The system requires time to adapt and personalize its responses. For children with ASD, this adaptation is crucial, as they need to get used to wearing the system on their wrist.
+\end{enumerate}
+
 
 \end{document}

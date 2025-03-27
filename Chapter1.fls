@@ -113,6 +113,25 @@ INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\colortbl\colortbl.st
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\tools\array.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\nomencl\nomencl.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\nomencl\nomencl.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\xkeyval\xkeyval.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\generic\xkeyval\xkeyval.tex
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\generic\xkeyval\xkvutils.tex
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\base\ifthen.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\tocbasic.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\tocbasic.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrbase.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrlfile.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrlfile-hook.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrlfile-hook.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrlogo.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\koma-script\scrlogo.sty
+OUTPUT Chapter1.nlo
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT .\Chapter1.aux
@@ -152,6 +171,17 @@ INPUT C:\Users\DELL\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT .\Chapter1.toc
 INPUT .\Chapter1.toc
 INPUT Chapter1.toc
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 OUTPUT Chapter1.toc
 INPUT .\Chapter1.lof
 INPUT .\Chapter1.lof
@@ -161,6 +191,15 @@ INPUT .\Chapter1.lot
 INPUT .\Chapter1.lot
 INPUT Chapter1.lot
 OUTPUT Chapter1.lot
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT .\figure\description diagram.jpg
+INPUT .\figure\description diagram.jpg
+INPUT .\figure\description diagram.jpg
+INPUT .\figure\description diagram.jpg
+INPUT .\figure\description diagram.jpg
+INPUT .\figure\description diagram.jpg
+INPUT .\figure\description diagram.jpg
 INPUT Chapter1.aux
 INPUT .\Chapter1.out
 INPUT .\Chapter1.out
