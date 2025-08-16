@@ -1,0 +1,948 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{specialeducationguide_autism}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=6958a380dae6ec079f7cd2b97deab809}{%
+           family={{Special Education Guide}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{6958a380dae6ec079f7cd2b97deab809}
+      \strng{fullhash}{6958a380dae6ec079f7cd2b97deab809}
+      \strng{fullhashraw}{6958a380dae6ec079f7cd2b97deab809}
+      \strng{bibnamehash}{6958a380dae6ec079f7cd2b97deab809}
+      \strng{authorbibnamehash}{6958a380dae6ec079f7cd2b97deab809}
+      \strng{authornamehash}{6958a380dae6ec079f7cd2b97deab809}
+      \strng{authorfullhash}{6958a380dae6ec079f7cd2b97deab809}
+      \strng{authorfullhashraw}{6958a380dae6ec079f7cd2b97deab809}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.specialeducationguide.com/disability-profiles/autism/}}
+      \field{note}{Accessed: 2025-04-19}
+      \field{title}{The Definition of Autism Under IDEA Part C}
+    \endentry
+    \entry{behavioralinnovations_types_levels_ASD}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=1e0049c018073ef9153c2ca45455194f}{%
+           family={{Behavioral Innovations}},
+           familyi={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{1e0049c018073ef9153c2ca45455194f}
+      \strng{fullhash}{1e0049c018073ef9153c2ca45455194f}
+      \strng{fullhashraw}{1e0049c018073ef9153c2ca45455194f}
+      \strng{bibnamehash}{1e0049c018073ef9153c2ca45455194f}
+      \strng{authorbibnamehash}{1e0049c018073ef9153c2ca45455194f}
+      \strng{authornamehash}{1e0049c018073ef9153c2ca45455194f}
+      \strng{authorfullhash}{1e0049c018073ef9153c2ca45455194f}
+      \strng{authorfullhashraw}{1e0049c018073ef9153c2ca45455194f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://behavioral-innovations.com/blog/types-and-levels-autism-spectrum-disorder/}}
+      \field{note}{Accessed: 2025-04-19}
+      \field{title}{Types and Levels of Autism Spectrum Disorder}
+    \endentry
+    \entry{obrien2020_smartwatch_ASD}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=9a7e3e2fb5a364be0fa453c3b3deaac8}{%
+           family={O'Brien},
+           familyi={O\bibinitperiod},
+           given={Amanda},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a22a03d878b1c2f4b4bc8bf1fc527311}{%
+           family={Schlosser},
+           familyi={S\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=efbbde9ee3ecef76e70810c55766c794}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Christina},
+           giveni={C\bibinitperiod}}}%
+        {{hash=7bec104e9b544c2197fb226dadf41530}{%
+           family={Allen},
+           familyi={A\bibinitperiod},
+           given={Anna\bibnamedelima Andersen},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5d50dc793ccefd612046d6ff62d15f81}
+      \strng{fullhash}{2790d54d9941f2535cec35314febe458}
+      \strng{fullhashraw}{2790d54d9941f2535cec35314febe458}
+      \strng{bibnamehash}{2790d54d9941f2535cec35314febe458}
+      \strng{authorbibnamehash}{2790d54d9941f2535cec35314febe458}
+      \strng{authornamehash}{5d50dc793ccefd612046d6ff62d15f81}
+      \strng{authorfullhash}{2790d54d9941f2535cec35314febe458}
+      \strng{authorfullhashraw}{2790d54d9941f2535cec35314febe458}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Special Education Technology}
+      \field{note}{Accessed: 2025-04-19}
+      \field{number}{4}
+      \field{title}{Repurposing a Smartwatch to Support Individuals With Autism Spectrum Disorder: Sensory and Operational Considerations}
+      \field{volume}{36}
+      \field{year}{2020}
+      \verb{doi}
+      \verb 10.1177/0162643420904001
+      \endverb
+    \endentry
+    \entry{autismorg_uk_sensory_differences}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f640b98d8f0acc1c37aaee8482f88a82}{%
+           family={{National Autistic Society}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{f640b98d8f0acc1c37aaee8482f88a82}
+      \strng{fullhash}{f640b98d8f0acc1c37aaee8482f88a82}
+      \strng{fullhashraw}{f640b98d8f0acc1c37aaee8482f88a82}
+      \strng{bibnamehash}{f640b98d8f0acc1c37aaee8482f88a82}
+      \strng{authorbibnamehash}{f640b98d8f0acc1c37aaee8482f88a82}
+      \strng{authornamehash}{f640b98d8f0acc1c37aaee8482f88a82}
+      \strng{authorfullhash}{f640b98d8f0acc1c37aaee8482f88a82}
+      \strng{authorfullhashraw}{f640b98d8f0acc1c37aaee8482f88a82}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.autism.org.uk/advice-and-guidance/topics/sensory-differences/sensory-differences/all-audiences}}
+      \field{note}{Accessed: 2025-04-19}
+      \field{title}{Sensory differences – a guide for all audiences}
+    \endentry
+    \entry{ucf_offtask_behavior_project}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=e4705688ca1572ac34b4024992a3c069}{%
+           family={{University of Central Florida}},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{e4705688ca1572ac34b4024992a3c069}
+      \strng{fullhash}{e4705688ca1572ac34b4024992a3c069}
+      \strng{fullhashraw}{e4705688ca1572ac34b4024992a3c069}
+      \strng{bibnamehash}{e4705688ca1572ac34b4024992a3c069}
+      \strng{authorbibnamehash}{e4705688ca1572ac34b4024992a3c069}
+      \strng{authornamehash}{e4705688ca1572ac34b4024992a3c069}
+      \strng{authorfullhash}{e4705688ca1572ac34b4024992a3c069}
+      \strng{authorfullhashraw}{e4705688ca1572ac34b4024992a3c069}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.ece.ucf.edu/seniordesign/su2017fa2017/g20/index.html}}
+      \field{note}{Accessed: 2025-04-4}
+      \field{title}{Preventing, Anticipating, and Mitigating Off-Task Behavior in Special Needs Students}
+    \endentry
+    \entry{empatica_EmbracePlus}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f0ffef5db745f4d99556a4ebca7d2125}{%
+           family={{Empatica}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{f0ffef5db745f4d99556a4ebca7d2125}
+      \strng{fullhash}{f0ffef5db745f4d99556a4ebca7d2125}
+      \strng{fullhashraw}{f0ffef5db745f4d99556a4ebca7d2125}
+      \strng{bibnamehash}{f0ffef5db745f4d99556a4ebca7d2125}
+      \strng{authorbibnamehash}{f0ffef5db745f4d99556a4ebca7d2125}
+      \strng{authornamehash}{f0ffef5db745f4d99556a4ebca7d2125}
+      \strng{authorfullhash}{f0ffef5db745f4d99556a4ebca7d2125}
+      \strng{authorfullhashraw}{f0ffef5db745f4d99556a4ebca7d2125}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.empatica.com/embraceplus}}
+      \field{note}{Accessed: 2025-04-4}
+      \field{title}{EmbracePlus}
+    \endentry
+    \entry{verizon_GizmoWatch3_Autism}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0ca25011ed3f70a5d2c745b6a644e004}{%
+           family={{Verizon Communications}},
+           familyi={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ca25011ed3f70a5d2c745b6a644e004}
+      \strng{fullhash}{0ca25011ed3f70a5d2c745b6a644e004}
+      \strng{fullhashraw}{0ca25011ed3f70a5d2c745b6a644e004}
+      \strng{bibnamehash}{0ca25011ed3f70a5d2c745b6a644e004}
+      \strng{authorbibnamehash}{0ca25011ed3f70a5d2c745b6a644e004}
+      \strng{authornamehash}{0ca25011ed3f70a5d2c745b6a644e004}
+      \strng{authorfullhash}{0ca25011ed3f70a5d2c745b6a644e004}
+      \strng{authorfullhashraw}{0ca25011ed3f70a5d2c745b6a644e004}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.verizon.com/about/parenting/gizmo-watch-3-caring-for-people-with-Autism}}
+      \field{note}{Accessed: 2025-04-4}
+      \field{title}{A new tool for kids and people with Autism: The Gizmo Watch 3 – Adventure}
+    \endentry
+    \entry{xecor_esp32_vs_arduino}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d855bf6ce82813edc980baf22081366d}{%
+           family={{Xecor}},
+           familyi={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{d855bf6ce82813edc980baf22081366d}
+      \strng{fullhash}{d855bf6ce82813edc980baf22081366d}
+      \strng{fullhashraw}{d855bf6ce82813edc980baf22081366d}
+      \strng{bibnamehash}{d855bf6ce82813edc980baf22081366d}
+      \strng{authorbibnamehash}{d855bf6ce82813edc980baf22081366d}
+      \strng{authornamehash}{d855bf6ce82813edc980baf22081366d}
+      \strng{authorfullhash}{d855bf6ce82813edc980baf22081366d}
+      \strng{authorfullhashraw}{d855bf6ce82813edc980baf22081366d}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.xecor.com/blog/esp32-vs-arduino}}
+      \field{note}{Accessed: 2025-04-20}
+      \field{title}{ESP32 vs Arduino}
+    \endentry
+    \entry{makerstore_LilyPad_Mboard}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=2757560063dc1649c16f985630eaf288}{%
+           family={{Maker Store Australia}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2757560063dc1649c16f985630eaf288}
+      \strng{fullhash}{2757560063dc1649c16f985630eaf288}
+      \strng{fullhashraw}{2757560063dc1649c16f985630eaf288}
+      \strng{bibnamehash}{2757560063dc1649c16f985630eaf288}
+      \strng{authorbibnamehash}{2757560063dc1649c16f985630eaf288}
+      \strng{authornamehash}{2757560063dc1649c16f985630eaf288}
+      \strng{authorfullhash}{2757560063dc1649c16f985630eaf288}
+      \strng{authorfullhashraw}{2757560063dc1649c16f985630eaf288}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.makerstore.com.au/product/elec-lily-mboard/}}
+      \field{note}{Accessed: 2025-04-20}
+      \field{title}{LilyPad Arduino 328 Main Board}
+    \endentry
+    \entry{cytron_raspi_zero2w}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0e3fa721628ede74876fce42620fadfa}{%
+           family={{Cytron Technologies}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{0e3fa721628ede74876fce42620fadfa}
+      \strng{fullhash}{0e3fa721628ede74876fce42620fadfa}
+      \strng{fullhashraw}{0e3fa721628ede74876fce42620fadfa}
+      \strng{bibnamehash}{0e3fa721628ede74876fce42620fadfa}
+      \strng{authorbibnamehash}{0e3fa721628ede74876fce42620fadfa}
+      \strng{authornamehash}{0e3fa721628ede74876fce42620fadfa}
+      \strng{authorfullhash}{0e3fa721628ede74876fce42620fadfa}
+      \strng{authorfullhashraw}{0e3fa721628ede74876fce42620fadfa}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.cytron.io/tutorial/raspberry-pi-zero-2-w-quad-core-and-64-bit-cpu}}
+      \field{note}{Accessed: 2025-04-20}
+      \field{title}{Raspberry Pi Zero 2 W – Quad-core and 64-bit CPU}
+    \endentry
+    \entry{nabto_iot_esp32}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=34451b1b7c01b5d4ee3e1e628b2fadff}{%
+           family={{Nabto}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{34451b1b7c01b5d4ee3e1e628b2fadff}
+      \strng{fullhash}{34451b1b7c01b5d4ee3e1e628b2fadff}
+      \strng{fullhashraw}{34451b1b7c01b5d4ee3e1e628b2fadff}
+      \strng{bibnamehash}{34451b1b7c01b5d4ee3e1e628b2fadff}
+      \strng{authorbibnamehash}{34451b1b7c01b5d4ee3e1e628b2fadff}
+      \strng{authornamehash}{34451b1b7c01b5d4ee3e1e628b2fadff}
+      \strng{authorfullhash}{34451b1b7c01b5d4ee3e1e628b2fadff}
+      \strng{authorfullhashraw}{34451b1b7c01b5d4ee3e1e628b2fadff}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.nabto.com/guide-to-iot-esp-32/}}
+      \field{note}{Accessed: 2025-04-20}
+      \field{title}{A Complete Guide to IoT With ESP32}
+    \endentry
+    \entry{alibaba_lilypad328}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=77208d631fda9c4391f9d65ce65dc850}{%
+           family={{Alibaba.com}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{fullhash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{fullhashraw}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{bibnamehash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{authorbibnamehash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{authornamehash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{authorfullhash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{authorfullhashraw}{77208d631fda9c4391f9d65ce65dc850}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.alibaba.com/product-detail/Jeking-LilyPad-328-Main-Board-ATmega328P_60682251395.html}}
+      \field{note}{Accessed: 2025-04-20}
+      \field{title}{Jeking LilyPad 328 Main Board ATmega328P}
+    \endentry
+    \entry{mcilwain2019_autism_healthcare}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=7c582be84c02aa7d8ab97c262442da53}{%
+           family={McIlwain},
+           familyi={M\bibinitperiod},
+           given={Doris},
+           giveni={D\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{6ba9304603f36c2a25135832087a98ab}
+      \strng{fullhash}{6ba9304603f36c2a25135832087a98ab}
+      \strng{fullhashraw}{6ba9304603f36c2a25135832087a98ab}
+      \strng{bibnamehash}{6ba9304603f36c2a25135832087a98ab}
+      \strng{authorbibnamehash}{6ba9304603f36c2a25135832087a98ab}
+      \strng{authornamehash}{6ba9304603f36c2a25135832087a98ab}
+      \strng{authorfullhash}{6ba9304603f36c2a25135832087a98ab}
+      \strng{authorfullhashraw}{6ba9304603f36c2a25135832087a98ab}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Biomedical Informatics}
+      \field{title}{Healthcare for Autistic Adults: A Scoping Review}
+      \field{volume}{94}
+      \field{year}{2019}
+      \field{pages}{103183}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.jbi.2019.103183
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1532046419300577
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1532046419300577
+      \endverb
+    \endentry
+    \entry{lord2016_autism_diagnosis}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=11859b385ff90f9e62db2745229e351e}{%
+           family={Lord},
+           familyi={L\bibinitperiod},
+           given={Catherine},
+           giveni={C\bibinitperiod}}}%
+        {{hash=dfa447ee32d5caf920012819e6cdefd6}{%
+           family={Elsabbagh},
+           familyi={E\bibinitperiod},
+           given={Mayada},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a61317d399ade32946f2d47d4e9dd024}{%
+           family={Baird},
+           familyi={B\bibinitperiod},
+           given={Gillian},
+           giveni={G\bibinitperiod}}}%
+        {{hash=3b2b2892434c45a3aa67864c0b83755c}{%
+           family={Veenstra-Vanderweele},
+           familyi={V\bibinithyphendelim V\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{13873f4ac7bd807290db652e6cce8d28}
+      \strng{fullhash}{40982012b5b5589c4aa36f3857a1e1cf}
+      \strng{fullhashraw}{40982012b5b5589c4aa36f3857a1e1cf}
+      \strng{bibnamehash}{40982012b5b5589c4aa36f3857a1e1cf}
+      \strng{authorbibnamehash}{40982012b5b5589c4aa36f3857a1e1cf}
+      \strng{authornamehash}{13873f4ac7bd807290db652e6cce8d28}
+      \strng{authorfullhash}{40982012b5b5589c4aa36f3857a1e1cf}
+      \strng{authorfullhashraw}{40982012b5b5589c4aa36f3857a1e1cf}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Lancet}
+      \field{number}{10022}
+      \field{title}{Autism spectrum disorder}
+      \field{volume}{387}
+      \field{year}{2016}
+      \field{pages}{508\bibrangedash 520}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1016/S0140-6736(15)01189-1
+      \endverb
+      \verb{urlraw}
+      \verb https://pmc.ncbi.nlm.nih.gov/articles/PMC5058562/
+      \endverb
+      \verb{url}
+      \verb https://pmc.ncbi.nlm.nih.gov/articles/PMC5058562/
+      \endverb
+    \endentry
+    \entry{seeedstudio_gsr_sensor}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=e47a5c22c3c2e012514c9d5a4141b8b9}{%
+           family={{Seeed Studio}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \strng{fullhash}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \strng{fullhashraw}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \strng{bibnamehash}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \strng{authorbibnamehash}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \strng{authornamehash}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \strng{authorfullhash}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \strng{authorfullhashraw}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \field{extraname}{1}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://wiki.seeedstudio.com/Grove-GSR_Sensor/}}
+      \field{note}{Accessed: 2025-04-20}
+      \field{title}{Grove - GSR Sensor Wiki}
+    \endentry
+    \entry{imotions_shimmer3_gsr}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=b24ebc7909749d8a281b55dbe43bdc48}{%
+           family={{iMotions}},
+           familyi={i\bibinitperiod}}}%
+      }
+      \strng{namehash}{b24ebc7909749d8a281b55dbe43bdc48}
+      \strng{fullhash}{b24ebc7909749d8a281b55dbe43bdc48}
+      \strng{fullhashraw}{b24ebc7909749d8a281b55dbe43bdc48}
+      \strng{bibnamehash}{b24ebc7909749d8a281b55dbe43bdc48}
+      \strng{authorbibnamehash}{b24ebc7909749d8a281b55dbe43bdc48}
+      \strng{authornamehash}{b24ebc7909749d8a281b55dbe43bdc48}
+      \strng{authorfullhash}{b24ebc7909749d8a281b55dbe43bdc48}
+      \strng{authorfullhashraw}{b24ebc7909749d8a281b55dbe43bdc48}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://imotions.com/products/hardware/shimmer3-gsr/}}
+      \field{note}{Accessed: 2025-04-20}
+      \field{title}{Shimmer3 GSR+}
+    \endentry
+    \entry{ielectrony_max30102}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=95e2118a9f0db52cc9b02fac810528b1}{%
+           family={{iElectrony}},
+           familyi={i\bibinitperiod}}}%
+      }
+      \strng{namehash}{95e2118a9f0db52cc9b02fac810528b1}
+      \strng{fullhash}{95e2118a9f0db52cc9b02fac810528b1}
+      \strng{fullhashraw}{95e2118a9f0db52cc9b02fac810528b1}
+      \strng{bibnamehash}{95e2118a9f0db52cc9b02fac810528b1}
+      \strng{authorbibnamehash}{95e2118a9f0db52cc9b02fac810528b1}
+      \strng{authornamehash}{95e2118a9f0db52cc9b02fac810528b1}
+      \strng{authorfullhash}{95e2118a9f0db52cc9b02fac810528b1}
+      \strng{authorfullhashraw}{95e2118a9f0db52cc9b02fac810528b1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://ielectrony.com/en/product/max30102-heart-rate-and-pulse-oximeter-sensor-module/}}
+      \field{note}{Accessed: 2025-04-20}
+      \field{title}{MAX30102 Heart Rate and Pulse Oximeter Sensor Module}
+    \endentry
+    \entry{kitsguru_heartbeat_sensor}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=3bc4a44e880c867dda0bff77480ed53e}{%
+           family={{KitsGuru}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{3bc4a44e880c867dda0bff77480ed53e}
+      \strng{fullhash}{3bc4a44e880c867dda0bff77480ed53e}
+      \strng{fullhashraw}{3bc4a44e880c867dda0bff77480ed53e}
+      \strng{bibnamehash}{3bc4a44e880c867dda0bff77480ed53e}
+      \strng{authorbibnamehash}{3bc4a44e880c867dda0bff77480ed53e}
+      \strng{authornamehash}{3bc4a44e880c867dda0bff77480ed53e}
+      \strng{authorfullhash}{3bc4a44e880c867dda0bff77480ed53e}
+      \strng{authorfullhashraw}{3bc4a44e880c867dda0bff77480ed53e}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://kitsguru.com/products/heart-beat-pulse-sensor}}
+      \field{note}{Accessed: 2025-04-20}
+      \field{title}{Heart Beat Pulse Sensor}
+    \endentry
+    \entry{electronicwings_mpu6050}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=e9d41cf488c69b7880fe37fb52c679ba}{%
+           family={{ElectronicWings}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{e9d41cf488c69b7880fe37fb52c679ba}
+      \strng{fullhash}{e9d41cf488c69b7880fe37fb52c679ba}
+      \strng{fullhashraw}{e9d41cf488c69b7880fe37fb52c679ba}
+      \strng{bibnamehash}{e9d41cf488c69b7880fe37fb52c679ba}
+      \strng{authorbibnamehash}{e9d41cf488c69b7880fe37fb52c679ba}
+      \strng{authornamehash}{e9d41cf488c69b7880fe37fb52c679ba}
+      \strng{authorfullhash}{e9d41cf488c69b7880fe37fb52c679ba}
+      \strng{authorfullhashraw}{e9d41cf488c69b7880fe37fb52c679ba}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.electronicwings.com/sensors-modules/mpu6050-gyroscope-accelerometer-temperature-sensor-module}}
+      \field{note}{Accessed: 2025-04-21}
+      \field{title}{MPU6050 Gyroscope, Accelerometer, and Temperature Sensor Module}
+    \endentry
+    \entry{electronicwings_adxl335}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=e9d41cf488c69b7880fe37fb52c679ba}{%
+           family={{ElectronicWings}},
+           familyi={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{e9d41cf488c69b7880fe37fb52c679ba}
+      \strng{fullhash}{e9d41cf488c69b7880fe37fb52c679ba}
+      \strng{fullhashraw}{e9d41cf488c69b7880fe37fb52c679ba}
+      \strng{bibnamehash}{e9d41cf488c69b7880fe37fb52c679ba}
+      \strng{authorbibnamehash}{e9d41cf488c69b7880fe37fb52c679ba}
+      \strng{authornamehash}{e9d41cf488c69b7880fe37fb52c679ba}
+      \strng{authorfullhash}{e9d41cf488c69b7880fe37fb52c679ba}
+      \strng{authorfullhashraw}{e9d41cf488c69b7880fe37fb52c679ba}
+      \field{extraname}{2}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.electronicwings.com/sensors-modules/adxl335-accelerometer-module}}
+      \field{note}{Accessed: 2025-04-21}
+      \field{title}{ADXL335 Accelerometer Module}
+    \endentry
+    \entry{suntechlite_apa102_vs_ws2812b}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d3d6f446e95f5150196461954dd5b341}{%
+           family={{SuntechLite}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3d6f446e95f5150196461954dd5b341}
+      \strng{fullhash}{d3d6f446e95f5150196461954dd5b341}
+      \strng{fullhashraw}{d3d6f446e95f5150196461954dd5b341}
+      \strng{bibnamehash}{d3d6f446e95f5150196461954dd5b341}
+      \strng{authorbibnamehash}{d3d6f446e95f5150196461954dd5b341}
+      \strng{authornamehash}{d3d6f446e95f5150196461954dd5b341}
+      \strng{authorfullhash}{d3d6f446e95f5150196461954dd5b341}
+      \strng{authorfullhashraw}{d3d6f446e95f5150196461954dd5b341}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://suntechlite.com/apa102-vs-ws2812b/}}
+      \field{note}{Accessed: 2025-04-21}
+      \field{title}{APA102 vs WS2812B: Differences and Comparison}
+    \endentry
+    \entry{nvidia_jetson_nano_dev}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=9ad14fae09b617d96cb4af76c555b394}{%
+           family={{NVIDIA Corporation}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{fullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{bibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorbibnamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authornamehash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhash}{9ad14fae09b617d96cb4af76c555b394}
+      \strng{authorfullhashraw}{9ad14fae09b617d96cb4af76c555b394}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://developer.nvidia.com/embedded/jetson-nano}}
+      \field{note}{Accessed: 2025-04-21}
+      \field{title}{Jetson Nano Developer Kit}
+    \endentry
+    \entry{amazon_raspberry_pi4_modelb}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d4dc321dcc5349d7ded13c47f3e3626f}{%
+           family={{Amazon.com}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{d4dc321dcc5349d7ded13c47f3e3626f}
+      \strng{fullhash}{d4dc321dcc5349d7ded13c47f3e3626f}
+      \strng{fullhashraw}{d4dc321dcc5349d7ded13c47f3e3626f}
+      \strng{bibnamehash}{d4dc321dcc5349d7ded13c47f3e3626f}
+      \strng{authorbibnamehash}{d4dc321dcc5349d7ded13c47f3e3626f}
+      \strng{authornamehash}{d4dc321dcc5349d7ded13c47f3e3626f}
+      \strng{authorfullhash}{d4dc321dcc5349d7ded13c47f3e3626f}
+      \strng{authorfullhashraw}{d4dc321dcc5349d7ded13c47f3e3626f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.amazon.com/Raspberry-Model-2019-Quad-Bluetooth/dp/B07TC2BK1X}}
+      \field{note}{Accessed: 2025-04-21}
+      \field{title}{Raspberry Pi 4 Model B 2019 Quad Core 64 Bit Bluetooth}
+    \endentry
+    \entry{seeedstudio_jetson_nano}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=e47a5c22c3c2e012514c9d5a4141b8b9}{%
+           family={{Seeed Studio}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \strng{fullhash}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \strng{fullhashraw}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \strng{bibnamehash}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \strng{authorbibnamehash}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \strng{authornamehash}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \strng{authorfullhash}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \strng{authorfullhashraw}{e47a5c22c3c2e012514c9d5a4141b8b9}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.seeedstudio.com/NVIDIAr-Jetson-Nanotm-Developer-Kit-p-2916.html}}
+      \field{note}{Accessed: 2025-04-21}
+      \field{title}{NVIDIA Jetson Nano Developer Kit}
+    \endentry
+    \entry{alibaba_lcd_module_2004}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=77208d631fda9c4391f9d65ce65dc850}{%
+           family={{Alibaba.com}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{fullhash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{fullhashraw}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{bibnamehash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{authorbibnamehash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{authornamehash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{authorfullhash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{authorfullhashraw}{77208d631fda9c4391f9d65ce65dc850}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.alibaba.com/product-detail/Blue-Blacklight-LCD-Module-Display-2004_60676471537.html}}
+      \field{note}{Accessed: 2025-04-21}
+      \field{title}{Blue Backlight LCD Module Display 2004}
+    \endentry
+    \entry{alibaba_lcd_sizes}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=77208d631fda9c4391f9d65ce65dc850}{%
+           family={{Alibaba.com}},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{fullhash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{fullhashraw}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{bibnamehash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{authorbibnamehash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{authornamehash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{authorfullhash}{77208d631fda9c4391f9d65ce65dc850}
+      \strng{authorfullhashraw}{77208d631fda9c4391f9d65ce65dc850}
+      \field{extraname}{3}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://italian.alibaba.com/product-detail/1-44-1-8-2-0-60551443058.html}}
+      \field{note}{Accessed: 2025-04-21}
+      \field{title}{1.44", 1.8", 2.0" LCD Display Modules}
+    \endentry
+    \entry{robotistan_usb_speaker}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=d2747c2127d4a7acd535a65ed029d95f}{%
+           family={{Robotistan}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d2747c2127d4a7acd535a65ed029d95f}
+      \strng{fullhash}{d2747c2127d4a7acd535a65ed029d95f}
+      \strng{fullhashraw}{d2747c2127d4a7acd535a65ed029d95f}
+      \strng{bibnamehash}{d2747c2127d4a7acd535a65ed029d95f}
+      \strng{authorbibnamehash}{d2747c2127d4a7acd535a65ed029d95f}
+      \strng{authornamehash}{d2747c2127d4a7acd535a65ed029d95f}
+      \strng{authorfullhash}{d2747c2127d4a7acd535a65ed029d95f}
+      \strng{authorfullhashraw}{d2747c2127d4a7acd535a65ed029d95f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.robotistan.com/odseven-mini-external-usb-stereo-speaker-for-raspberry-pi}}
+      \field{note}{Accessed: 2025-04-22}
+      \field{title}{ODSEVEN Mini External USB Stereo Speaker for Raspberry Pi}
+    \endentry
+    \entry{flipkart_bluetooth_receiver}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=3bc4a44e880c867dda0bff77480ed53e}{%
+           family={{KitsGuru}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{3bc4a44e880c867dda0bff77480ed53e}
+      \strng{fullhash}{3bc4a44e880c867dda0bff77480ed53e}
+      \strng{fullhashraw}{3bc4a44e880c867dda0bff77480ed53e}
+      \strng{bibnamehash}{3bc4a44e880c867dda0bff77480ed53e}
+      \strng{authorbibnamehash}{3bc4a44e880c867dda0bff77480ed53e}
+      \strng{authornamehash}{3bc4a44e880c867dda0bff77480ed53e}
+      \strng{authorfullhash}{3bc4a44e880c867dda0bff77480ed53e}
+      \strng{authorfullhashraw}{3bc4a44e880c867dda0bff77480ed53e}
+      \field{extraname}{2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.flipkart.com/kitsguru-mh-m28-wireless-bluetooth-audio-receiver-board-module-blt-4-2-mp3-lossless-decode-electronic-components-hobby-kit/p/itm9903fa3b8d84a}}
+      \field{note}{Accessed: 2025-04-22}
+      \field{title}{MH-M28 Wireless Bluetooth Audio Receiver Board Module BLT 4.2 MP3 Lossless Decode}
+    \endentry
+    \entry{scikit_svm}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=2ad72e574157d613a63fe8732cf468a8}{%
+           family={{scikit-learn developers}},
+           familyi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{fullhash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{fullhashraw}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{bibnamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authorbibnamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authornamehash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authorfullhash}{2ad72e574157d613a63fe8732cf468a8}
+      \strng{authorfullhashraw}{2ad72e574157d613a63fe8732cf468a8}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://scikit-learn.org/stable/modules/svm.html}}
+      \field{note}{Accessed: 2025-05-17}
+      \field{title}{Support Vector Machines — scikit-learn Documentation}
+    \endentry
+    \entry{mdpi_sensors_wearable}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=aaa817c91f69c269112417f891621141}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Ying},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{2c7e3cb49709f0d1105d59255b388363}
+      \strng{fullhash}{2c7e3cb49709f0d1105d59255b388363}
+      \strng{fullhashraw}{2c7e3cb49709f0d1105d59255b388363}
+      \strng{bibnamehash}{2c7e3cb49709f0d1105d59255b388363}
+      \strng{authorbibnamehash}{2c7e3cb49709f0d1105d59255b388363}
+      \strng{authornamehash}{2c7e3cb49709f0d1105d59255b388363}
+      \strng{authorfullhash}{2c7e3cb49709f0d1105d59255b388363}
+      \strng{authorfullhashraw}{2c7e3cb49709f0d1105d59255b388363}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors}
+      \field{number}{23}
+      \field{title}{Wearable Sensors for Autism Spectrum Disorder Detection: A Review}
+      \field{volume}{21}
+      \field{year}{2021}
+      \field{pages}{7916}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/s21237916
+      \endverb
+      \verb{urlraw}
+      \verb https://www.mdpi.com/1424-8220/21/23/7916
+      \endverb
+      \verb{url}
+      \verb https://www.mdpi.com/1424-8220/21/23/7916
+      \endverb
+    \endentry
+    \entry{pmc_sensors_asd}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ce084360cc68e7db4fe6cae1287b3adf}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=38026ba4ee6b102b47bf3ffb41325c8f}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI}%
+      }
+      \strng{namehash}{d035e9558961f1b06b38651704423988}
+      \strng{fullhash}{d035e9558961f1b06b38651704423988}
+      \strng{fullhashraw}{d035e9558961f1b06b38651704423988}
+      \strng{bibnamehash}{d035e9558961f1b06b38651704423988}
+      \strng{authorbibnamehash}{d035e9558961f1b06b38651704423988}
+      \strng{authornamehash}{d035e9558961f1b06b38651704423988}
+      \strng{authorfullhash}{d035e9558961f1b06b38651704423988}
+      \strng{authorfullhashraw}{d035e9558961f1b06b38651704423988}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Sensors}
+      \field{number}{3274}
+      \field{title}{Wearable Sensors for Autism Spectrum Disorder Monitoring}
+      \field{volume}{23}
+      \field{year}{2023}
+      \verb{doi}
+      \verb 10.3390/s23093274
+      \endverb
+      \verb{urlraw}
+      \verb https://pmc.ncbi.nlm.nih.gov/articles/PMC10055922/#sec4-sensors-23-03274
+      \endverb
+      \verb{url}
+      \verb https://pmc.ncbi.nlm.nih.gov/articles/PMC10055922/#sec4-sensors-23-03274
+      \endverb
+    \endentry
+    \entry{serokell_random_forest}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=26757efeb4f57fc8c234ee66bfa2a6ef}{%
+           family={{Serokell}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{26757efeb4f57fc8c234ee66bfa2a6ef}
+      \strng{fullhash}{26757efeb4f57fc8c234ee66bfa2a6ef}
+      \strng{fullhashraw}{26757efeb4f57fc8c234ee66bfa2a6ef}
+      \strng{bibnamehash}{26757efeb4f57fc8c234ee66bfa2a6ef}
+      \strng{authorbibnamehash}{26757efeb4f57fc8c234ee66bfa2a6ef}
+      \strng{authornamehash}{26757efeb4f57fc8c234ee66bfa2a6ef}
+      \strng{authorfullhash}{26757efeb4f57fc8c234ee66bfa2a6ef}
+      \strng{authorfullhashraw}{26757efeb4f57fc8c234ee66bfa2a6ef}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://serokell.io/blog/random-forest-classification}}
+      \field{note}{Accessed: 2025-05-17}
+      \field{title}{Random Forest Classification: An Introduction}
+    \endentry
+    \entry{geeksforgeeks_rf_vs_svm}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f1e069787ece74531d112559945c6871}{%
+           family={{GeeksforGeeks}},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhash}{f1e069787ece74531d112559945c6871}
+      \strng{fullhashraw}{f1e069787ece74531d112559945c6871}
+      \strng{bibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorbibnamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authornamehash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhash}{f1e069787ece74531d112559945c6871}
+      \strng{authorfullhashraw}{f1e069787ece74531d112559945c6871}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.geeksforgeeks.org/when-to-use-random-forest-over-svm-and-vice-versa/}}
+      \field{note}{Accessed: 2025-05-17}
+      \field{title}{When to Use Random Forest over SVM and Vice Versa}
+    \endentry
+    \entry{novelbits_ble_power}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=000a3fa827bce368ccb7de16065f8551}{%
+           family={{NovelBits}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{000a3fa827bce368ccb7de16065f8551}
+      \strng{fullhash}{000a3fa827bce368ccb7de16065f8551}
+      \strng{fullhashraw}{000a3fa827bce368ccb7de16065f8551}
+      \strng{bibnamehash}{000a3fa827bce368ccb7de16065f8551}
+      \strng{authorbibnamehash}{000a3fa827bce368ccb7de16065f8551}
+      \strng{authornamehash}{000a3fa827bce368ccb7de16065f8551}
+      \strng{authorfullhash}{000a3fa827bce368ccb7de16065f8551}
+      \strng{authorfullhashraw}{000a3fa827bce368ccb7de16065f8551}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://novelbits.io/ble-power-consumption-optimization/}}
+      \field{note}{Accessed: 2025-05-20}
+      \field{title}{BLE Power Consumption Optimization}
+    \endentry
+    \entry{techtarget_wifi}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=700f0e630e939fff4cff6be3fc518b34}{%
+           family={{TechTarget}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{fullhash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{fullhashraw}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{bibnamehash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{authorbibnamehash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{authornamehash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{authorfullhash}{700f0e630e939fff4cff6be3fc518b34}
+      \strng{authorfullhashraw}{700f0e630e939fff4cff6be3fc518b34}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.techtarget.com/searchmobilecomputing/definition/Wi-Fi}}
+      \field{note}{Accessed: 2025-05-20}
+      \field{title}{Wi-Fi Definition}
+    \endentry
+    \entry{hivemq_mqtt}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=0171a4031e03845688141f0ca6f54ad2}{%
+           family={{HiveMQ}},
+           familyi={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{0171a4031e03845688141f0ca6f54ad2}
+      \strng{fullhash}{0171a4031e03845688141f0ca6f54ad2}
+      \strng{fullhashraw}{0171a4031e03845688141f0ca6f54ad2}
+      \strng{bibnamehash}{0171a4031e03845688141f0ca6f54ad2}
+      \strng{authorbibnamehash}{0171a4031e03845688141f0ca6f54ad2}
+      \strng{authornamehash}{0171a4031e03845688141f0ca6f54ad2}
+      \strng{authorfullhash}{0171a4031e03845688141f0ca6f54ad2}
+      \strng{authorfullhashraw}{0171a4031e03845688141f0ca6f54ad2}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.hivemq.com/mqtt/}}
+      \field{note}{Accessed: 2025-05-20}
+      \field{title}{MQTT Protocol Overview}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

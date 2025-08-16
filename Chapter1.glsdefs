@@ -1,0 +1,28 @@
+\glsdefs@newdocentry{asd}%
+{%
+name={\acronymfont {\glsentryshort {asd}}},%
+sort={ASD},%
+type={acronym},%
+first={ASD},%
+firstplural={ASDs},%
+text={ASD},%
+plural={ASDs},%
+description={Autism Spectrum Disorder},%
+descriptionplural={Autism Spectrum Disorder},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Autism Spectrum Disorder},%
+longplural={Autism Spectrum Disorders},%
+short={ASD},%
+shortplural={ASDs},%
+counter={page},%
+parent={},%
+%
+}%
+
