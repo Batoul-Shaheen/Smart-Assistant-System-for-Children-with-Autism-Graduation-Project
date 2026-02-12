@@ -41,12 +41,14 @@ INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsgen.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsbsy.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\tocbibind\tocbibind.sty
-INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\tocbibind\tocbibind.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\caption\subcaption.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\caption\caption3.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\tocbibind\tocbibind.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\tocbibind\tocbibind.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\enumitem\enumitem.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\makecell\makecell.sty
@@ -324,6 +326,10 @@ INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\eso-pic\eso-pic.sty
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\pdfpages\pppdftex.def
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\ragged2e\ragged2e.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\ragged2e\ragged2e.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\tex\latex\setspace\setspace.sty
 OUTPUT Chapter1.nlo
 INPUT .\Chapter1.aux
 INPUT .\Chapter1.aux
@@ -374,6 +380,34 @@ INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\DELL\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT .\Certification2.pdf
+INPUT .\Certification2.pdf
+INPUT .\Certification2.pdf
+INPUT .\Certification2.pdf
+INPUT .\Certification2.pdf
+INPUT .\Certification2.pdf
+INPUT .\Certification2.pdf
+INPUT .\Certification2.pdf
+INPUT .\Certification2.pdf
+INPUT .\Certification2.pdf
+INPUT .\Certification2.pdf
+INPUT .\Certification2.pdf
+INPUT .\Certification2.pdf
+INPUT .\Certification2.pdf
+INPUT .\Abstract (2).pdf
+INPUT .\Abstract (2).pdf
+INPUT .\Abstract (2).pdf
+INPUT .\Abstract (2).pdf
+INPUT .\Abstract (2).pdf
+INPUT .\Abstract (2).pdf
+INPUT .\Abstract (2).pdf
+INPUT .\Abstract (2).pdf
+INPUT .\Abstract (2).pdf
+INPUT .\Abstract (2).pdf
+INPUT .\Abstract (2).pdf
+INPUT .\Abstract (2).pdf
+INPUT .\Abstract (2).pdf
+INPUT .\Abstract (2).pdf
 INPUT .\Chapter1.toc
 INPUT .\Chapter1.toc
 INPUT Chapter1.toc
@@ -400,43 +434,15 @@ OUTPUT Chapter1.lot
 INPUT .\Chapter1.nls
 INPUT .\Chapter1.nls
 INPUT Chapter1.nls
-INPUT .\Certification.pdf
-INPUT .\Certification.pdf
-INPUT .\Certification.pdf
-INPUT .\Certification.pdf
-INPUT .\Certification.pdf
-INPUT .\Certification.pdf
-INPUT .\Certification.pdf
-INPUT .\Certification.pdf
-INPUT .\Certification.pdf
-INPUT .\Certification.pdf
-INPUT .\Certification.pdf
-INPUT .\Certification.pdf
-INPUT .\Certification.pdf
-INPUT .\Certification.pdf
-INPUT .\Abstract.pdf
-INPUT .\Abstract.pdf
-INPUT .\Abstract.pdf
-INPUT .\Abstract.pdf
-INPUT .\Abstract.pdf
-INPUT .\Abstract.pdf
-INPUT .\Abstract.pdf
-INPUT .\Abstract.pdf
-INPUT .\Abstract.pdf
-INPUT .\Abstract.pdf
-INPUT .\Abstract.pdf
-INPUT .\Abstract.pdf
-INPUT .\Abstract.pdf
-INPUT .\Abstract.pdf
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT .\figure\sysdesc.jpg
-INPUT .\figure\sysdesc.jpg
-INPUT .\figure\sysdesc.jpg
-INPUT .\figure\sysdesc.jpg
-INPUT .\figure\sysdesc.jpg
-INPUT .\figure\sysdesc.jpg
-INPUT .\figure\sysdesc.jpg
+INPUT .\figure\sysdesc.jpeg
+INPUT .\figure\sysdesc.jpeg
+INPUT .\figure\sysdesc.jpeg
+INPUT .\figure\sysdesc.jpeg
+INPUT .\figure\sysdesc.jpeg
+INPUT .\figure\sysdesc.jpeg
+INPUT .\figure\sysdesc.jpeg
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1200.tfm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi10.tfm
@@ -444,27 +450,20 @@ INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\jknappen\ec\tcrm1095.tfm
-INPUT .\figure\ESP32 WROOM.jpg
-INPUT .\figure\ESP32 WROOM.jpg
-INPUT .\figure\ESP32 WROOM.jpg
-INPUT .\figure\ESP32 WROOM.jpg
-INPUT .\figure\ESP32 WROOM.jpg
-INPUT .\figure\ESP32 WROOM.jpg
-INPUT .\figure\ESP32 WROOM.jpg
-INPUT .\figure\lilypad-arduino.jpg
-INPUT .\figure\lilypad-arduino.jpg
-INPUT .\figure\lilypad-arduino.jpg
-INPUT .\figure\lilypad-arduino.jpg
-INPUT .\figure\lilypad-arduino.jpg
-INPUT .\figure\lilypad-arduino.jpg
-INPUT .\figure\lilypad-arduino.jpg
-INPUT .\figure\raspberry pi zero.png
-INPUT .\figure\raspberry pi zero.png
-INPUT .\figure\raspberry pi zero.png
-INPUT .\figure\raspberry pi zero.png
-INPUT .\figure\raspberry pi zero.png
-INPUT .\figure\raspberry pi zero.png
-INPUT .\figure\raspberry pi zero.png
+INPUT .\figure\esp32-c3-zero-1.jpg
+INPUT .\figure\esp32-c3-zero-1.jpg
+INPUT .\figure\esp32-c3-zero-1.jpg
+INPUT .\figure\esp32-c3-zero-1.jpg
+INPUT .\figure\esp32-c3-zero-1.jpg
+INPUT .\figure\esp32-c3-zero-1.jpg
+INPUT .\figure\esp32-c3-zero-1.jpg
+INPUT .\figure\lily.jpg
+INPUT .\figure\lily.jpg
+INPUT .\figure\lily.jpg
+INPUT .\figure\lily.jpg
+INPUT .\figure\lily.jpg
+INPUT .\figure\lily.jpg
+INPUT .\figure\lily.jpg
 INPUT .\figure\Grove GSR.jpg
 INPUT .\figure\Grove GSR.jpg
 INPUT .\figure\Grove GSR.jpg
@@ -507,13 +506,13 @@ INPUT .\figure\adxl335.jpg
 INPUT .\figure\adxl335.jpg
 INPUT .\figure\adxl335.jpg
 INPUT .\figure\adxl335.jpg
-INPUT .\figure\LED2.jpg
-INPUT .\figure\LED2.jpg
-INPUT .\figure\LED2.jpg
-INPUT .\figure\LED2.jpg
-INPUT .\figure\LED2.jpg
-INPUT .\figure\LED2.jpg
-INPUT .\figure\LED2.jpg
+INPUT .\figure\neopixel.jpeg
+INPUT .\figure\neopixel.jpeg
+INPUT .\figure\neopixel.jpeg
+INPUT .\figure\neopixel.jpeg
+INPUT .\figure\neopixel.jpeg
+INPUT .\figure\neopixel.jpeg
+INPUT .\figure\neopixel.jpeg
 INPUT .\figure\APA102-RGB-LED.jpg
 INPUT .\figure\APA102-RGB-LED.jpg
 INPUT .\figure\APA102-RGB-LED.jpg
@@ -521,13 +520,13 @@ INPUT .\figure\APA102-RGB-LED.jpg
 INPUT .\figure\APA102-RGB-LED.jpg
 INPUT .\figure\APA102-RGB-LED.jpg
 INPUT .\figure\APA102-RGB-LED.jpg
-INPUT .\figure\raspberry 4B.jpg
-INPUT .\figure\raspberry 4B.jpg
-INPUT .\figure\raspberry 4B.jpg
-INPUT .\figure\raspberry 4B.jpg
-INPUT .\figure\raspberry 4B.jpg
-INPUT .\figure\raspberry 4B.jpg
-INPUT .\figure\raspberry 4B.jpg
+INPUT .\figure\rp3.png
+INPUT .\figure\rp3.png
+INPUT .\figure\rp3.png
+INPUT .\figure\rp3.png
+INPUT .\figure\rp3.png
+INPUT .\figure\rp3.png
+INPUT .\figure\rp3.png
 INPUT .\figure\Nvivid.jpg
 INPUT .\figure\Nvivid.jpg
 INPUT .\figure\Nvivid.jpg
@@ -535,13 +534,13 @@ INPUT .\figure\Nvivid.jpg
 INPUT .\figure\Nvivid.jpg
 INPUT .\figure\Nvivid.jpg
 INPUT .\figure\Nvivid.jpg
-INPUT .\figure\standardLcd.jpg
-INPUT .\figure\standardLcd.jpg
-INPUT .\figure\standardLcd.jpg
-INPUT .\figure\standardLcd.jpg
-INPUT .\figure\standardLcd.jpg
-INPUT .\figure\standardLcd.jpg
-INPUT .\figure\standardLcd.jpg
+INPUT .\figure\hdmi.jpg
+INPUT .\figure\hdmi.jpg
+INPUT .\figure\hdmi.jpg
+INPUT .\figure\hdmi.jpg
+INPUT .\figure\hdmi.jpg
+INPUT .\figure\hdmi.jpg
+INPUT .\figure\hdmi.jpg
 INPUT .\figure\TFT.jpg
 INPUT .\figure\TFT.jpg
 INPUT .\figure\TFT.jpg
@@ -556,20 +555,13 @@ INPUT .\figure\USB speaker.jpg
 INPUT .\figure\USB speaker.jpg
 INPUT .\figure\USB speaker.jpg
 INPUT .\figure\USB speaker.jpg
-INPUT .\figure\Blutooth speaker.jpg
-INPUT .\figure\Blutooth speaker.jpg
-INPUT .\figure\Blutooth speaker.jpg
-INPUT .\figure\Blutooth speaker.jpg
-INPUT .\figure\Blutooth speaker.jpg
-INPUT .\figure\Blutooth speaker.jpg
-INPUT .\figure\Blutooth speaker.jpg
-INPUT .\figure\Random Forest2.png
-INPUT .\figure\Random Forest2.png
-INPUT .\figure\Random Forest2.png
-INPUT .\figure\Random Forest2.png
-INPUT .\figure\Random Forest2.png
-INPUT .\figure\Random Forest2.png
-INPUT .\figure\Random Forest2.png
+INPUT .\figure\blespeaker.jpeg
+INPUT .\figure\blespeaker.jpeg
+INPUT .\figure\blespeaker.jpeg
+INPUT .\figure\blespeaker.jpeg
+INPUT .\figure\blespeaker.jpeg
+INPUT .\figure\blespeaker.jpeg
+INPUT .\figure\blespeaker.jpeg
 INPUT .\figure\conceptual diagram2.jpg
 INPUT .\figure\conceptual diagram2.jpg
 INPUT .\figure\conceptual diagram2.jpg
@@ -577,68 +569,210 @@ INPUT .\figure\conceptual diagram2.jpg
 INPUT .\figure\conceptual diagram2.jpg
 INPUT .\figure\conceptual diagram2.jpg
 INPUT .\figure\conceptual diagram2.jpg
-INPUT .\figure\blockdiagram4.drawio.png
-INPUT .\figure\blockdiagram4.drawio.png
-INPUT .\figure\blockdiagram4.drawio.png
-INPUT .\figure\blockdiagram4.drawio.png
-INPUT .\figure\blockdiagram4.drawio.png
-INPUT .\figure\blockdiagram4.drawio.png
-INPUT .\figure\blockdiagram4.drawio.png
+INPUT .\figure\bdd5.jpg
+INPUT .\figure\bdd5.jpg
+INPUT .\figure\bdd5.jpg
+INPUT .\figure\bdd5.jpg
+INPUT .\figure\bdd5.jpg
+INPUT .\figure\bdd5.jpg
+INPUT .\figure\bdd5.jpg
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt12.tfm
-INPUT .\figure\seq3.png
-INPUT .\figure\seq3.png
-INPUT .\figure\seq3.png
-INPUT .\figure\seq3.png
-INPUT .\figure\seq3.png
-INPUT .\figure\seq3.png
-INPUT .\figure\seq3.png
-INPUT .\figure\Schematic_wearable2.png
-INPUT .\figure\Schematic_wearable2.png
-INPUT .\figure\Schematic_wearable2.png
-INPUT .\figure\Schematic_wearable2.png
-INPUT .\figure\Schematic_wearable2.png
-INPUT .\figure\Schematic_wearable2.png
-INPUT .\figure\Schematic_wearable2.png
-INPUT .\figure\Schematic_AutismSense_InteractiveScreen2.png
-INPUT .\figure\Schematic_AutismSense_InteractiveScreen2.png
-INPUT .\figure\Schematic_AutismSense_InteractiveScreen2.png
-INPUT .\figure\Schematic_AutismSense_InteractiveScreen2.png
-INPUT .\figure\Schematic_AutismSense_InteractiveScreen2.png
-INPUT .\figure\Schematic_AutismSense_InteractiveScreen2.png
-INPUT .\figure\Schematic_AutismSense_InteractiveScreen2.png
+INPUT .\figure\sequance1.png
+INPUT .\figure\sequance1.png
+INPUT .\figure\sequance1.png
+INPUT .\figure\sequance1.png
+INPUT .\figure\sequance1.png
+INPUT .\figure\sequance1.png
+INPUT .\figure\sequance1.png
+INPUT .\figure\schemwearable.png
+INPUT .\figure\schemwearable.png
+INPUT .\figure\schemwearable.png
+INPUT .\figure\schemwearable.png
+INPUT .\figure\schemwearable.png
+INPUT .\figure\schemwearable.png
+INPUT .\figure\schemwearable.png
+INPUT .\figure\schemscreen.png
+INPUT .\figure\schemscreen.png
+INPUT .\figure\schemscreen.png
+INPUT .\figure\schemscreen.png
+INPUT .\figure\schemscreen.png
+INPUT .\figure\schemscreen.png
+INPUT .\figure\schemscreen.png
+INPUT .\figure\wearabledesign.png
+INPUT .\figure\wearabledesign.png
+INPUT .\figure\wearabledesign.png
+INPUT .\figure\wearabledesign.png
+INPUT .\figure\wearabledesign.png
+INPUT .\figure\wearabledesign.png
+INPUT .\figure\wearabledesign.png
+INPUT .\figure\interactivescreendesign2.jpeg
+INPUT .\figure\interactivescreendesign2.jpeg
+INPUT .\figure\interactivescreendesign2.jpeg
+INPUT .\figure\interactivescreendesign2.jpeg
+INPUT .\figure\interactivescreendesign2.jpeg
+INPUT .\figure\interactivescreendesign2.jpeg
+INPUT .\figure\interactivescreendesign2.jpeg
+INPUT .\figure\codehrbuffer.png
+INPUT .\figure\codehrbuffer.png
+INPUT .\figure\codehrbuffer.png
+INPUT .\figure\codehrbuffer.png
+INPUT .\figure\codehrbuffer.png
+INPUT .\figure\codehrbuffer.png
+INPUT .\figure\codehrbuffer.png
+INPUT .\figure\codegsr.png
+INPUT .\figure\codegsr.png
+INPUT .\figure\codegsr.png
+INPUT .\figure\codegsr.png
+INPUT .\figure\codegsr.png
+INPUT .\figure\codegsr.png
+INPUT .\figure\codegsr.png
+INPUT .\figure\codehrratio.png
+INPUT .\figure\codehrratio.png
+INPUT .\figure\codehrratio.png
+INPUT .\figure\codehrratio.png
+INPUT .\figure\codehrratio.png
+INPUT .\figure\codehrratio.png
+INPUT .\figure\codehrratio.png
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx8.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx6.tfm
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
+INPUT .\figure\app2.jpeg
+INPUT .\figure\app2.jpeg
+INPUT .\figure\app2.jpeg
+INPUT .\figure\app2.jpeg
+INPUT .\figure\app2.jpeg
+INPUT .\figure\app2.jpeg
+INPUT .\figure\app2.jpeg
+INPUT .\figure\telegram.drawio.png
+INPUT .\figure\telegram.drawio.png
+INPUT .\figure\telegram.drawio.png
+INPUT .\figure\telegram.drawio.png
+INPUT .\figure\telegram.drawio.png
+INPUT .\figure\telegram.drawio.png
+INPUT .\figure\telegram.drawio.png
+INPUT .\figure\motionvaluse.jpeg
+INPUT .\figure\motionvaluse.jpeg
+INPUT .\figure\motionvaluse.jpeg
+INPUT .\figure\motionvaluse.jpeg
+INPUT .\figure\motionvaluse.jpeg
+INPUT .\figure\motionvaluse.jpeg
+INPUT .\figure\motionvaluse.jpeg
+INPUT .\figure\neopixelallled.jpeg
+INPUT .\figure\neopixelallled.jpeg
+INPUT .\figure\neopixelallled.jpeg
+INPUT .\figure\neopixelallled.jpeg
+INPUT .\figure\neopixelallled.jpeg
+INPUT .\figure\neopixelallled.jpeg
+INPUT .\figure\neopixelallled.jpeg
+INPUT .\figure\neopixelorange.jpeg
+INPUT .\figure\neopixelorange.jpeg
+INPUT .\figure\neopixelorange.jpeg
+INPUT .\figure\neopixelorange.jpeg
+INPUT .\figure\neopixelorange.jpeg
+INPUT .\figure\neopixelorange.jpeg
+INPUT .\figure\neopixelorange.jpeg
+INPUT .\figure\neopixellastmin.jpeg
+INPUT .\figure\neopixellastmin.jpeg
+INPUT .\figure\neopixellastmin.jpeg
+INPUT .\figure\neopixellastmin.jpeg
+INPUT .\figure\neopixellastmin.jpeg
+INPUT .\figure\neopixellastmin.jpeg
+INPUT .\figure\neopixellastmin.jpeg
+INPUT .\figure\Therapist Control.jpeg
+INPUT .\figure\Therapist Control.jpeg
+INPUT .\figure\Therapist Control.jpeg
+INPUT .\figure\Therapist Control.jpeg
+INPUT .\figure\Therapist Control.jpeg
+INPUT .\figure\Therapist Control.jpeg
+INPUT .\figure\Therapist Control.jpeg
+INPUT .\figure\coloring.jpeg
+INPUT .\figure\coloring.jpeg
+INPUT .\figure\coloring.jpeg
+INPUT .\figure\coloring.jpeg
+INPUT .\figure\coloring.jpeg
+INPUT .\figure\coloring.jpeg
+INPUT .\figure\coloring.jpeg
+INPUT .\figure\telegrambotnotification.jpeg
+INPUT .\figure\telegrambotnotification.jpeg
+INPUT .\figure\telegrambotnotification.jpeg
+INPUT .\figure\telegrambotnotification.jpeg
+INPUT .\figure\telegrambotnotification.jpeg
+INPUT .\figure\telegrambotnotification.jpeg
+INPUT .\figure\telegrambotnotification.jpeg
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixapp.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
+INPUT .\appendixai.pdf
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
-INPUT .\aiedit.pdf
 INPUT Chapter1.aux
 INPUT .\Chapter1.out
 INPUT .\Chapter1.out
@@ -654,6 +788,10 @@ INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
@@ -662,7 +800,11 @@ INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb
 INPUT C:\Users\DELL\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt12.pfb

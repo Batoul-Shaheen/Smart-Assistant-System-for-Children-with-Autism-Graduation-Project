@@ -1,24 +1,27 @@
-\nomenclatureentry{ASD@[{ASD}]\begingroup  Autism Spectrum Disorder\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{IDEA@[{IDEA}]\begingroup  Individuals with Disabilities Education Act\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{DSM@[{DSM}]\begingroup Diagnostic and Statistical Manual of Mental Disorders\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{EBD@[{EBD}]\begingroup  Emotional Behavior Disorder\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{IDE@[{IDE}]\begingroup  Integrated Development Environment\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{EDA@[{EDA}]\begingroup Electrodermal activity\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{HRV@[{HRV}]\begingroup Heart Rate Variability\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{PPG@[{PPG}]\begingroup Photoplethysmography\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{BPM@[{BPM}]\begingroup heartbeats per minute\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{GSR@[{GSR}]\begingroup Galvanic Skin Response\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{HR@[{HR}]\begingroup Heart Rate\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{MPU@[{MPU}]\begingroup Motion Processing Unit\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{ADXL335@[{ADXL335}]\begingroup Analog Devices Acceleromete\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{DMP@[{DMP}]\begingroup Digital Motion Processor\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{SVM@[{SVM}]\begingroup Support Vector Machine\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{PWM@[{PWM}]\begingroup Pulse Width Modulation\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{GPU@[{GPU}]\begingroup Graphics Processing Unit \nomeqref {0}|nompageref}{5}
-\nomenclatureentry{LCD@[{LCD}]\begingroup Liquid Crystal Display\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{TFT LCD@[{TFT LCD}]\begingroup Thin-Film Transistor Liquid Crystal Display\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{SPI@[{SPI}]\begingroup Serial Peripheral Interface\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{I2C@[{I2C}]\begingroup  Inter-Integrated Circuit\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{Wi-Fi@[{Wi-Fi}]\begingroup Wireless Networking Technology\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{BLE@[{BLE}]\begingroup Bluetooth Low Energy\nomeqref {0}|nompageref}{5}
-\nomenclatureentry{MQTT@[{MQTT}]\begingroup Message Queuing Telemetry Transport\nomeqref {0}|nompageref}{5}
+\nomenclatureentry{ASD@[{ASD}]\begingroup  Autism Spectrum Disorder\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{IDEA@[{IDEA}]\begingroup  Individuals with Disabilities Education Act\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{DSM@[{DSM}]\begingroup Diagnostic and Statistical Manual of Mental Disorders\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{EBD@[{EBD}]\begingroup  Emotional Behavior Disorder\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{EDA@[{EDA}]\begingroup Electrodermal activity\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{HRV@[{HRV}]\begingroup Heart Rate Variability\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{PPG@[{PPG}]\begingroup Photoplethysmography\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{BPM@[{BPM}]\begingroup heartbeats per minute\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{GSR@[{GSR}]\begingroup Galvanic Skin Response\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{HR@[{HR}]\begingroup Heart Rate\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{MPU@[{MPU}]\begingroup Motion Processing Unit\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{ADXL335@[{ADXL335}]\begingroup Analog Devices Acceleromete\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{DMP@[{DMP}]\begingroup Digital Motion Processor\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{PWM@[{PWM}]\begingroup Pulse Width Modulation\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{GPU@[{GPU}]\begingroup Graphics Processing Unit \nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{LCD@[{LCD}]\begingroup Liquid Crystal Display\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{TFT LCD@[{TFT LCD}]\begingroup Thin-Film Transistor Liquid Crystal Display\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{SPI@[{SPI}]\begingroup Serial Peripheral Interface\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{I2C@[{I2C}]\begingroup  Inter-Integrated Circuit\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{Wi-Fi@[{Wi-Fi}]\begingroup Wireless Networking Technology\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{BLE@[{BLE}]\begingroup Bluetooth Low Energy\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{RMS@[{RMS}]\begingroup Root Mean Square\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{HDMI@[{HDMI}]\begingroup High-Definition Multimedia Interface\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{SDA@[{SDA}]\begingroup Serial data Line\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{SCL@[{SCL}]\begingroup Serial Clock Line\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{EMA@[{EMA}]\begingroup Exponential Moving Average\nomeqref {0}|nompageref}{ix}
+\nomenclatureentry{HTTP@[{HTTP}]\begingroup Hypertext Transfer Protocol\nomeqref {0}|nompageref}{ix}

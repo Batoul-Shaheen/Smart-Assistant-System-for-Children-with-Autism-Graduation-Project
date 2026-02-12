@@ -2384,38 +2384,40 @@
     <bcf:citekey order="9" intorder="1">ucf_offtask_behavior_project</bcf:citekey>
     <bcf:citekey order="10" intorder="1">empatica_EmbracePlus</bcf:citekey>
     <bcf:citekey order="11" intorder="1">verizon_GizmoWatch3_Autism</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">xecor_esp32_vs_arduino</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">pihut_esp32_c3_mini</bcf:citekey>
     <bcf:citekey order="13" intorder="1">makerstore_LilyPad_Mboard</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">cytron_raspi_zero2w</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">nabto_iot_esp32</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">alibaba_lilypad328</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">mcilwain2019_autism_healthcare</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">lord2016_autism_diagnosis</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">seeedstudio_gsr_sensor</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">imotions_shimmer3_gsr</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">ielectrony_max30102</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">kitsguru_heartbeat_sensor</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">electronicwings_mpu6050</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">electronicwings_adxl335</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">alibaba_lilypad328</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">mcilwain2019_autism_healthcare</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">lord2016_autism_diagnosis</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">seeedstudio_gsr_sensor</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">imotions_shimmer3_gsr</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">ielectrony_max30102</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">kitsguru_heartbeat_sensor</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">electronicwings_mpu6050</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">electronicwings_adxl335</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">suntechlite_apa102_vs_ws2812b</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">suntechlite_apa102_vs_ws2812b</bcf:citekey>
     <bcf:citekey order="25" intorder="1">suntechlite_apa102_vs_ws2812b</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">suntechlite_apa102_vs_ws2812b</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">suntechlite_apa102_vs_ws2812b</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">nvidia_jetson_nano_dev</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">amazon_raspberry_pi4_modelb</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">seeedstudio_jetson_nano</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">alibaba_lcd_module_2004</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">alibaba_lcd_sizes</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">robotistan_usb_speaker</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">flipkart_bluetooth_receiver</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">scikit_svm</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">mdpi_sensors_wearable</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">pmc_sensors_asd</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">serokell_random_forest</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">serokell_random_forest</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">geeksforgeeks_rf_vs_svm</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">novelbits_ble_power</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">techtarget_wifi</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">hivemq_mqtt</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">nvidia_jetson_nano_dev</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">pihut_raspberry_pi_3_model_b</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">seeedstudio_jetson_nano</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">amazon_raspberry_pi_7_touchscreen</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">alibaba_lcd_sizes</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">robotistan_usb_speaker</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">flipkart_bluetooth_receiver</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">hr_stress_asd_2019</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">eda_baseline_threshold_2023</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">novelbits_ble_power</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">techtarget_wifi</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">NIST_ES</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">PosadaChon2020</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">hr_stress_asd_2019</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">eda_baseline_threshold_2023</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">tum_motion_2013</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">foerster_activity_1999</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">tum_motion_2013</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">tum_motion_2013</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">pmc_stress_monitoring_2010</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

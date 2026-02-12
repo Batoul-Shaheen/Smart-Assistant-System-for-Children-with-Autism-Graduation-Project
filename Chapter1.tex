@@ -2,7 +2,9 @@
 \usepackage[a4paper, total={7in, 10in}]{geometry}
 \usepackage{graphicx} % For including images
 \usepackage{amsmath}  % For mathematical symbols
-\usepackage{tocbibind}
+\usepackage{subcaption}
+% \usepackage{tocbibind}
+\usepackage[nottoc,notlof,notlot]{tocbibind}
 \setcounter{secnumdepth}{4}
 \usepackage[justification=centering]{caption}
 \usepackage{enumitem}
@@ -23,14 +25,24 @@
 \usepackage{pdfpages}  % في preamble
 \usepackage{tikz}
 \usepackage{hyperref}
+\usepackage{listings}
+\usepackage{ragged2e}
+\usepackage{setspace}
 
 
 
 
+\lstset{
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{gray!10},
+  frame=single
+}
 
 \makenomenclature % Create the nomenclature (list of acronyms)
 
 \begin{document}
+\pagenumbering{roman}
+\onehalfspacing
 
 
 \begin{titlepage}
@@ -39,19 +51,51 @@
     {\Huge\textbf{Palestine Polytechnic University}}\\[0.7cm]
     {\large\textbf{College of Information Technology and Computer Systems Engineering}}\\[0.2cm]
     {\large\textbf{Department of Computer Systems Engineering}}\\[1.5cm] 
-    {\Huge \textbf{AutiSense: \\[0.1cm]Smart Assistant System for Children with Autism Spectrum Disorder }}\\[2cm]
+    {\Huge \textbf{AutiSense: \\[0.1cm]Smart Assistant System for Children with Autism Spectrum Disorder }}\\[1.5cm]
     {\large\textbf{Authors:}}\\[0.3cm]
     {\large\textbf{Batool Shaheen - 237010}}\\[0.3cm]
-    {\large\textbf{Raghad Darabee - 237008}}\\[2cm]
+    {\large\textbf{Raghad Darabee - 237008}}\\[1.5cm]
     {\large\textbf {Supervised by:}}\\[0.3cm]
-    {\large\textbf {Eng. Wael Altakrouri}}\\[2cm]
+    {\large\textbf {Eng. Wael Altakrouri}}\\[1.5cm]
     {\large\textit{To fulfill the requirements for a bachelor’s degree in Computer Systems Engineering}}\\[1.5cm]
     \textbf{2025-2026}
     \vfill
 \end{titlepage}
 
+\includepdf[
+  pages=1,
+  pagecommand={
+    \phantomsection
+    \thispagestyle{plain}
+  }
+]{Certification2.pdf}
+
+\chapter*{\centering Abstract}
+
+Children with Autism Spectrum Disorder (ASD) may experience sudden emotional stress that is difficult to communicate verbally, which can interrupt daily routines and make task transitions challenging. This project presents AutiSense, an assistive system that  uses a wearable system to notice signs of stress early and helps the caregiver with appropriate interventions at the right time. The wearable is built around an ESP32 and integrates a MAX30102 heart-rate sensor, a galvanic skin response (GSR) sensor, and an MPU6050 motion sensor for continuous monitoring. Stress detection follows a baseline-based threshold method . The system first measures a personal baseline for each child, then filters GSR noise, uses an average heart-rate value, and checks motion to separate stress from normal movement or repetitive behavior. When moderate or high stress is detected, the caregiver is alerted through a mobile application and uses it to start an LED-based timer to help the child transition. Prototype testing confirmed reliable real-time sensing and end-to-end operation of the monitoring, decision, and feedback workflow, indicating that AutiSense is a practical, low-complexity solution for supportive ASD care settings.\\[1.5cm]
 
 
+\textbf{Keywords:}
+ASD, Real-Time Alert System, Wearable Device, Stress Detection, Task Transition, GSR Sensor, Heart Rate Monitoring.
+
+\newpage
+\includepdf[pages=-, pagecommand={\thispagestyle{plain}}]{Abstract (2).pdf}
+\newpage
+
+\chapter*{\centering Acknowledgement}
+
+\justifying
+All praise and gratitude are due to Allah, the Almighty, whose guidance, mercy, and countless blessings granted us the strength, patience, and determination to complete this graduation project. Without His will and support, this work would not have been possible. 
+
+We would like to express our deepest respect and remembrance for the martyrs who sacrificed their lives for freedom and justice. Their resilience and courage remain a source of inspiration and remind us of values far greater than any academic achievement.
+
+We extend our sincere gratitude to our project supervisor, Eng. Wael Al Takrouri, for his continuous guidance, valuable feedback, and unwavering support throughout this project. His expertise and encouragement played a vital role in shaping this work and overcoming the challenges we encountered.
+
+Our heartfelt thanks go to our families for their endless love, patience, and encouragement. Their belief in us and constant support have been our greatest motivation throughout this journey.
+
+We would also like to thank our friends and colleagues who stood by us during both challenging and joyful moments, offering support, cooperation, and encouragement that made this experience more meaningful.
+
+Finally, we would like to express our appreciation to everyone who contributed, directly or indirectly, to the successful completion of this project. Your support is truly valued and gratefully acknowledged.
 % Table of Contents
 \tableofcontents
 \clearpage
@@ -73,7 +117,6 @@
 \nomenclature{IDEA}{ Individuals with Disabilities Education Act}
 \nomenclature{DSM}{Diagnostic and Statistical Manual of Mental Disorders}
 \nomenclature{EBD}{ Emotional Behavior Disorder}
-\nomenclature{IDE}{ Integrated Development Environment}
 \nomenclature{EDA}{Electrodermal activity}
 \nomenclature{HRV}{Heart Rate Variability}
 \nomenclature{PPG}{Photoplethysmography}
@@ -83,7 +126,6 @@
 \nomenclature{MPU}{Motion Processing Unit}
 \nomenclature{ADXL335}{Analog Devices Acceleromete}
 \nomenclature{DMP}{Digital Motion Processor}
-\nomenclature{SVM}{Support Vector Machine}
 \nomenclature{PWM}{Pulse Width Modulation}
 \nomenclature{GPU}{Graphics Processing Unit }
 \nomenclature{LCD}{Liquid Crystal Display}
@@ -92,66 +134,41 @@
 \nomenclature{I2C}{ Inter-Integrated Circuit}
 \nomenclature{Wi-Fi}{Wireless Networking Technology}
 \nomenclature{BLE}{Bluetooth Low Energy}
-\nomenclature{MQTT}{Message Queuing Telemetry Transport}
+\nomenclature{RMS}{Root Mean Square}
+\nomenclature{HDMI}{High-Definition Multimedia Interface}
+\nomenclature{SDA}{Serial data Line}
+\nomenclature{SCL}{Serial Clock Line}
+\nomenclature{EMA}{Exponential Moving Average}
+\nomenclature{HTTP}{Hypertext Transfer Protocol}
+
+
 
 \printnomenclature % طباعة قائمة الاختصارات
-\addcontentsline{toc}{chapter}{List of Acronyms} % إضافة العنوان إلى جدول المحتويات
+\cleardoublepage
+
+% \addcontentsline{toc}{chapter}{List of Acronyms} % إضافة العنوان إلى جدول المحتويات
+\pagenumbering{arabic}
+
 \cleardoublepage % منع الصفحة الفارغة الزائدة
 
 
 
 % \chapter*{Acknowledgment}
 
-\includepdf[
-  pages=1,
-  pagecommand={
-    \phantomsection
-    \addcontentsline{toc}{chapter}{Certification and Anti-Plagiarism Declaration}
-    \thispagestyle{plain}
-  }
-]{Certification.pdf}
-
-
-
-% \includepdf[pages=-,pagecommand={\thispagestyle{plain}}]{Certification.pdf}
-
-% \addtocontents{toc}{\protect\contentsline{chapter}{Certification and Anti-Plagiarism Declaration}{6}{}}
-
-
-% \includepdf[pages=-,pagecommand={\thispagestyle{plain}}]{Certification.pdf}
-
-% \addtocontents{toc}{\protect\contentsline{chapter}{Certification and Anti-Plagiarism Declaration}{\thepage}{}}
-
-% \includepdf[pages=-,pagecommand={\thispagestyle{plain}}]{Certification.pdf}
-% \addcontentsline{toc}{chapter}{Certification and Anti-Plagiarism Declaration}
-
-
-
-
-
-\chapter*{Abstract}
-\addcontentsline{toc}{chapter}{Abstract}
-
-The project aims to design a wearable smart system that will help children with Autism Spectrum Disorder (ASD) manage stress and transitions. Knowing the need for real-time, personalized support, the system employs physiological sensors—including heart rate, galvanic skin response, and motion sensor—to detect early signs of emotional distress. A mobile application alerts the specialists, who can select calming interventions such as calming music, visual cues, and an LED countdown timer. An interactive display external to the wearer enables emotional regulation and task readiness using animation and auditory stimulation. The proposed design trail a promising, child-centered approach to developing emotional and behavioral self-regulation, creating an overall calmer and more constructive situation for autistic children.\\[0.5cm]
-\textbf{Keywords:}
-ASD, Real-Time Alert System, Wearable Device, Stress Detection, Task Transition, GSR Sensor, Heart Rate Monitoring.
-
-\newpage
-\includepdf[pages=-, pagecommand={\thispagestyle{plain}}]{Abstract.pdf}
-\newpage
-
-
 \chapter{Introduction}
 
 \section{Preface}
-The intelligent stress management for children with Autism Spectrum Disorder (ASD) is basically an on the spot personalized support, helping children through their emotional challenges and smoother task transitions. Autistic children become anxious and sometimes disengaged when facing some unexpected change or overwhelming situation, traditional methods like verbal cues or static routines just cannot suffice to meet the need at that very moment.\\[0.5cm]
+The intelligent stress management for children with Autism Spectrum Disorder (ASD) is basically on the spot personalized support, helping children through their emotional challenges and smoother task transitions. Autistic children become anxious and sometimes disengaged when facing some unexpected change or overwhelming situation, traditional methods like verbal cues or static routines just cannot suffice to meet the need at that very moment.
+
 This system improves emotional well-being by recognizing early signs of stress and providing personalized support to help children stay calm and focused. Advanced monitoring and intervention methods assist children in developing improved adjustment skills that improve their daily social interactions and life quality. In addition, the use of structured visual instruction integration facilitates task execution and reducing anxiety and confusion. At the end, this project is an intriguing this is a tangible way to increase autonomy and build a more leveled, engaging community for autistic children.
 
 
 \section{Problem Statement}
 
-Children with ASD need support tailored to their needs, helping them express emotion and adjust to stress and transitions between activities. They should receive an immediate personalized intervention according to their needs so that they may be able to lead through activities in a calm transition and supportive environment.\\[0.5cm]
-Currently, most support systems use a static approach, bringing in elements such as verbal prompts, picture schedules, or set routines, which can sometimes fail to help when there is a sudden mood change. These negative changes often go unnoticed at first, gradually contributing to stress, frustration, or disengagement in emotions. Without visual cues for changes, transitions from one task to another can be so adversarial that it makes adjustments all the harder.\\[0.5cm]
+Children with ASD need support tailored to their needs, helping them express emotion and adjust to stress and transitions between activities. They should receive an immediate personalized intervention according to their needs so that they may be able to lead through activities in a calm transition and supportive environment.
+
+Currently, most support systems use a static approach, bringing in elements such as verbal prompts, picture schedules, or set routines, which can sometimes fail to help when there is a sudden mood change. These negative changes often go unnoticed at first, gradually contributing to stress, frustration, or disengagement in emotions. Without visual cues for changes, transitions from one task to another can be so adversarial that it makes adjustments all the harder.
+
 To overcome these difficulties, the proposed solution helps a smart system to identify early distress signs and intervene with customized real-time responses. Through the means of auditory prompting, sensory feedback, and interactive visual cues, the system stimulates an ambience that helps kids to regulate emotions, lower anxiety, and walk through everyday activities with more confidence and ease.
 
 
@@ -168,9 +185,9 @@ In this project, we propose a system that aims to provide the following features
         \item Ensuring seamless system component level communication for real-time data exchange.
     \end{enumerate}
 
-    \item The system aims to provide personalized interventions based on the child’s emotional and behavioral responses. In order to complete this aim, the following objectives should be achieved:
+    \item The system aims to support timely and appropriate calming interventions based on the child’s detected emotional and physiological state. In order to achieve this aim, the following objectives should be accomplished:
     \begin{enumerate}[label=(\alph*)]
-        \item Use data analysis techniques for real-time prediction of emotional states and stress levels.
+        \item Perform real-time stress detection using physiological signals and threshold-based decision logic.
     \end{enumerate}
 
     \item The system aims to improve task transitions and time management for children with ASD using visual and auditory tools. In order to complete this aim, the following objectives should be achieved: 
@@ -191,7 +208,7 @@ The system must be able to:
     \item Identify and track signs of emotional discomfort in autistic children.
     \item Respond immediately through a variety of feedback mechanisms when stress is detected.
     \item Include a structured method to help children transition between activities.
-    \item Collect and analyze user data to recognize behavioral patterns and improve actions taken by the system.  
+    \item Collect and process physiological sensor data using predefined thresholds to determine stress levels.  
     \item Enable specialists to receive stress alerts and remotely activate personalized interventions via a mobile application.
     \item Operate in real-time, ensuring timely responses to events causing stress.
 \end{enumerate}
@@ -205,26 +222,27 @@ The system must be able to:
 \end{enumerate}
 
 \section{System Description}
-Our system is a wearable device can be worn on the child’s hand. It is designed to help children with Autism Spectrum Disorder (ASD) regulate their emotions and manage transitions between tasks. The system consists of sensors and interactional components intended to detect early cues that something is troubling them and provide timely support.\\[0.5cm]
-The system consists of three subsystems, a wearable device, an Interactive screen, and mobile application. The wearable device has a heart rate monitor for sensing heart pulse rate and the system can determines heart rate change, a skin conductance sensor to sense the amount of sweat, which is considered an index of stress, and movement sensors that track abnormal movement patterns. All the sensors are reading data in real time, and this is being processed to recognize signs of emotional disturbance. When stress is detected, the system sends an alert that is sent out via a mobile application to the specialist or teacher in real time. Based on the child’s current emotional state and needs, the specialist selects the appropriate calming intervention, such as activating soothing sounds with adjustable volume levels or modifying the intensity of visual feedback like screen brightness. This collaboration provides more specific and individualized regulation strategies, ensuring that assistance is tailored to the child's condition in real time.\\[0.5cm]
-To assist in transitioning between activities like transitioning between classes, daily tasks in the classroom, and individual activities to group or reverse activities. the wearable has an LED based countdown timer, which the specialist can configure remotely to help the child prepare for transitions between tasks. This is supplemented by an external interactive screen that can offer calming visual and auditory stimuli, including calming animations, or visually stimulating content to help with emotional regulation. With ongoing monitoring, adaptive feedback, and guided task based instruction, the device demands to impact emotional regulation and daily management routines for children with autism.\\[0.5cm]
+Our system is a wearable device can be worn on the child’s hand. It is designed to help children with Autism Spectrum Disorder (ASD) regulate their emotions and manage transitions between tasks. The system consists of sensors and interactional components intended to detect early cues that something is troubling them and provide timely support.
+
+The system consists of three subsystems, a wearable device, an Interactive screen, and mobile application. The wearable device has a heart rate monitor for sensing heart pulse rate and the system can determines heart rate change, a skin conductance sensor to sense the amount of sweat, which is considered an index of stress, and movement sensors that track abnormal movement patterns. All the sensors are reading data in real time, and this is being processed to recognize signs of emotional disturbance. When stress is detected, the system sends an alert that is sent out via a mobile application to the specialist or teacher in real time. Based on the child’s current emotional state and needs, the specialist selects the appropriate calming intervention, such as guided breathing exercises with audio instructions,relaxing videos, or interactive coloring activities displayed on the screen. This collaboration provides more specific and individualized regulation strategies, ensuring that assistance is tailored to the child's condition in real time.
+
+To assist in transitioning between activities like transitioning between classes, daily tasks in the classroom, and individual activities to group or reverse activities. the wearable has an LED based countdown timer, which the specialist can configure remotely to help the child prepare for transitions between tasks. This is supplemented by an external interactive screen that can offer calming visual and auditory stimuli, including relaxing videos, or visually stimulating content to help with emotional regulation. With ongoing monitoring, adaptive feedback, and guided task based instruction, the device demands to impact emotional regulation and daily management routines for children with autism.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.6\textwidth]{figure/sysdesc.jpg}
+    \includegraphics[width=0.6\textwidth]{figure/sysdesc.jpeg}
     \caption{System’s Expected Structure}
     \label{fig:system_description}
 \end{figure}
 
 
-\newpage
 \section{Project Limitations/Constraints}
 
 \begin{enumerate}
 
-\item \textbf{Cost Constraint:}
-Our system model will simulate real life situations for children with Autism Spectrum Disorder (ASD). The proposed solution is designed to simulate the type of support system we will need. However, it will be built using professional components, and the components will be a higher cost. Therefore, and because we are using expensive components we will design the prototype according to what is efficient for our model.
+% \item \textbf{Cost Constraint:}
+% Our system model will simulate real life situations for children with Autism Spectrum Disorder (ASD). The proposed solution is designed to simulate the type of support system we will need. However, it will be built using professional components, and the components will be a higher cost. Therefore, and because we are using expensive components we will design the prototype according to what is efficient for our model.
 \item \textbf{Wireless Connectivity and Detection Range:}
-Communication among wearable device, mobile application for the specialists, and external interactive screen are conducted via wireless communications. Poor wireless communications signal or a child's movement out of range may interrupt communications between devices. Delay in alerts or calming interventions may be caused, hence lowering emotionally rehab's timely effectiveness.
+Communication among the wearable device, the mobile application used by specialists, and the interactive screen is conducted over a Wi-Fi network. Network instability, limited coverage, or temporary disconnections may interrupt real-time data transmission and control commands. Such interruptions can lead to delayed stress alerts or calming interventions, potentially reducing the effectiveness of timely emotional regulation.
 \item \textbf{Power Limitations:}
 Since the wearable device runs on battery power, it needs regular recharging. If it isn’t charged in time, the system could temporarily stop monitoring.
 \item \textbf{Environmental Factors:}
@@ -237,53 +255,62 @@ The system requires time to adapt and personalize its responses. For autistic ch
 \section{Schedule}
 The tasks of the system implementation and operation are distributed along the first semester, summarized in Table 1.1.
 
-\begin{table}[h] 
-    \centering
-    \caption{Project Timeline for the First Semester}
-    \vspace{0.5em}
-    \renewcommand{\arraystretch}{1.3}
-    \begin{tabular}{|l|c|c|c|c|}  % أضفنا عمود جديد
-        \hline
-        \multicolumn{1}{|c|}{\textbf{Task / Week}} & \multicolumn{4}{c|}{\textbf{The First Semester}} \\ \hline
-        & \textbf{1 - 4} & \textbf{5 - 10} & \textbf{11 - 15} & \textbf{16 - 20} \\ \hline
-        Selection of Project Idea & \cellcolor{gray!30} &  &  &  \\ \hline
-        Collecting the Data        &  & \cellcolor{gray!30} & \cellcolor{gray!30} &  \\ \hline
-        System Design              &  &  & \cellcolor{gray!30} & \cellcolor{gray!30} \\ \hline
-        Documentation              &  & \cellcolor{gray!30} & \cellcolor{gray!30} & \cellcolor{gray!30} \\ \hline
-    \end{tabular}
-    \label{tab:timeline}
+\begin{table}[h]
+\centering
+\caption{Project Timeline}
+\vspace{0.5em}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{tabular}{|l|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|c|}{} &
+\multicolumn{3}{c|}{\textbf{The first semester}} &
+\multicolumn{4}{c|}{\textbf{The second semester}} \\
+\hline
+
+\textbf{Week} &
+\textbf{1 - 4} & \textbf{5 - 10} & \textbf{16 - 20} &
+\textbf{1 - 5} & \textbf{6 - 9} & \textbf{10 - 14} & \textbf{15} \\
+\hline
+
+Selection of project Idea
+& \cellcolor{gray!30} &  &  &  &  &  &  \\
+\hline
+
+Collecting the Data
+&  & \cellcolor{gray!30} & \cellcolor{gray!30} &  &  &  &  \\
+\hline
+
+System Design
+&  &  & \cellcolor{gray!30} & \cellcolor{gray!30} &  &  &  \\
+\hline
+
+System Implementation
+&  &  &  & \cellcolor{gray!30} & \cellcolor{gray!30} & \cellcolor{gray!30} &  \\
+\hline
+
+System testing
+&  &  &  &  & \cellcolor{gray!30} & \cellcolor{gray!30} & \cellcolor{gray!30} \\
+\hline
+
+system operation
+&  &  &  &  &  & \cellcolor{gray!30} & \cellcolor{gray!30} \\
+\hline
+
+Documentation
+&  & \cellcolor{gray!30} & \cellcolor{gray!30} &
+\cellcolor{gray!30} & \cellcolor{gray!30} & \cellcolor{gray!30} & \cellcolor{gray!30} \\
+\hline
+
+\end{tabular}
+\label{tab:timeline}
 \end{table}
-
-
-% \begin{table}[h]
-%     \centering
-
-%     % العنوان فوق الجدول، يدويًا ومتمركزًا
-%     \caption{Project Timeline for the First Semester}
-
-%     \vspace{0.5em}
-
-%     \renewcommand{\arraystretch}{1.3}
-%     \begin{tabular}{|l|c|c|c|}
-%         \hline
-%         \multicolumn{1}{|c|}{\textbf{Task / Week}} & \multicolumn{3}{c|}{\textbf{The First Semester}} \\ \hline
-%         & \textbf{1 - 4} & \textbf{5 - 10} & \textbf{11 - 15} \\ \hline
-%         Selection of Project Idea & \cellcolor{gray!30} &  &  \\ \hline
-%         Collecting the Data        &  & \cellcolor{gray!30} & \cellcolor{gray!30} \\ \hline
-%         System Design              &  &  & \cellcolor{gray!30} \\ \hline
-%         Documentation              &  & \cellcolor{gray!30} & \cellcolor{gray!30} \\ \hline
-%     \end{tabular}
-
-%     % العنوان في caption حتى يظهر في قائمة الجداول
-%     \label{tab:timeline}
-% \end{table}
-
-
 
 
 \section{Report Outline}
 
-This report is organized as follows: Chapter 2: Provides an overview of definition and classifications for Autism, and sensory processing difficulties in Autistic children, along with a literature review that compares our project to similar ones. Chapter 3: Outlines the project’s design, including both hardware and software aspects. It discusses design choices, the conceptual background of the software, the sequence diagram and presents a schematic diagram.
+This report is organized as follows: Chapter 2: Provides an overview of definition and classifications for Autism, and sensory processing difficulties in Autistic children, along with a literature review that compares our project to similar ones. Chapter 3: Outlines the project’s design, including both hardware and software aspects. It discusses design choices, the conceptual background of the software, the sequence diagram and presents a schematic diagram.Chapter 4: explains the system implementation and implementation challenges. Chapter 5: explains the test process of the system components. Finally, chapter 6: concludes the results of the work and recommendations of improvements. 
+
 
 \chapter{THEORETICAL BACKGROUND}
 
@@ -300,6 +327,7 @@ Autism is defined according to the Individuals with Disabilities Education Act (
 
 \subsubsection{Classifications}
 According to the Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5), ASD is classified as a single diagnosis without subcategories (as opposed to DSM-4), and is further divided into three levels based on the level of support required \cite{behavioralinnovations_types_levels_ASD}.\\[0.3cm]
+\clearpage
 \textbf{Level 1: Requiring Support} \\[0.3cm]
 The diagnosis of an individual with Level 1 Autism Spectrum Disorder (ASD) indicates the mildest form of autism. Individuals are typically verbal, able to form sentences, and engage in simple conversations. However, the above could not be expected to prompt or sustain social interaction, and could be expected to have difficulty with understanding social cues or engaging in small talk. They may not find it easy to initiate or sustain close friendships. They may be uncomfortable or anxious because of a change of routine or transition from one task to another. Although they are mostly independent in many places, they still require support, especially in social situations, to manage their interactions and adapt to changes effectively \cite{behavioralinnovations_types_levels_ASD}. \\[0.3cm]
 \textbf{Level 2: Requiring Substantial Support}\\[0.3cm]
@@ -310,7 +338,7 @@ The diagnosis of an individual with Level 3 Autism Spectrum Disorder (ASD) requi
 \renewcommand{\arraystretch}{1.8}  % زيادة المسافة بين الأسطر
 \begin{table}[h]
 \centering
-\caption{Levels of Support in Autism Spectrum Disorder}
+\caption{Levels Of Support In Autism Spectrum Disorder}
 \vspace{0.5em}
 
 \begin{tabular}{|>{\centering\arraybackslash}m{3.5cm}
@@ -340,7 +368,8 @@ Response to Change & Discomfort with change & Resistance to change & Strong resi
 \label{tab:asd_support_levels}
 \end{table}
 
-\subsection{Sensory Processing Difficulties in Autistic Children}
+\newpage
+\subsection{Sensory Processing Difficulties In Autistic Children}
 Children with Autism Spectrum Disorder (ASD) tend to have Sensory Processing Difficulty (SPD), which influences how they perceive and react to sensory input. Their challenges will be different from one child to another but typically emerge as one or more of the following:
 
 \begin{enumerate}[label=\arabic*.]
@@ -365,10 +394,10 @@ Unlike defensiveness, other children actively seek out sensory input. They might
 
 \end{enumerate}
 
-\clearpage
+% \clearpage
 \begin{table}[h]
 \centering
-\caption[Comparison of Sensory Processing Difficulties in Autistic Children]{Comparison of Sensory Processing Difficulties in Autistic Children \cite{autismorg_uk_sensory_differences}.}
+\caption[Comparison Of Sensory Processing Difficulties In Autistic Children]{Comparison of Sensory Processing Difficulties in Autistic Children \cite{autismorg_uk_sensory_differences}.}
 
 \renewcommand{\arraystretch}{1.2} % زيادة المسافة بين الأسطر
 \begin{tabular}{|p{3.2cm}|p{4.5cm}|p{4cm}|p{4.2cm}|}
@@ -432,90 +461,28 @@ Unlike defensiveness, other children actively seek out sensory input. They might
 \label{tab:sensory_behaviors}
 \end{table}
 
-% \clearpage
-% \renewcommand{\arraystretch}{1.8}  % زيادة المسافة بين الأسطر
-% \begin{table}[h]
-% \centering
-% \caption{Comparison of Sensory Processing Difficulties in Autistic Children}
-% \vspace{0.5em}
-
-% \begin{tabular}{|>{\centering\arraybackslash}m{3.2cm}
-%                 |>{\centering\arraybackslash}m{4.2cm}
-%                 |>{\centering\arraybackslash}m{4.2cm}
-%                 |>{\centering\arraybackslash}m{4.2cm}|}
-% \hline
-% \textbf{Category} &
-% \textbf{Common Behaviors} &
-% \textbf{Real-life Examples} &
-% \textbf{Support Strategies} \\
-% \hline
-
-% \makecell{\textbf{Over-}\\\textbf{Responsiveness}}& 
-% \makecell{
-% - Pain from light touch\\
-% - Dislike of certain fabrics\\
-% - Hair washing difficulties\\
-% - Food texture sensitivity
-% } & 
-% \makecell{- Refuses tight clothing\\- Cries when head is touched\\- Eats limited foods
-% } & 
-% \makecell{- Warn before touching\\
-% - Remove clothing labels\\
-% - Gradual texture exposure using soft tools \\} \\
-% \hline
-
-% \makecell{\textbf{Under-}\\\textbf{Responsiveness}} &
-% \makecell{
-% - High pain threshold\\
-% - Doesn’t notice food in mouth\\
-% - Chews on non-food items\\
-% - Seeks deep pressure 
-% } &
-% \makecell{
-% - Hugs too tightly\\
-% - Bites or hits self\\
-% - Loves heavy blankets 
-% } & 
-% \makecell{
-% - Provide safe chew alternatives\\
-% - Use weighted items\\
-% - Offer structured sensory activities 
-% }\\
-% \hline
-
-
-% \makecell{\textbf{Sensory}\\\textbf{Seeking}} &
-% \makecell{
-% - Rubs textures\\
-% - Seeks vibrations\\
-% - Enjoys spinning or movement\\
-% } &
-% \makecell{
-% - Touches walls frequently \\
-% - Jumps or spins constantly\\
-% - Craves tight hugs 
-% } &
-% \makecell{
-% - Provide sensory-rich toys\\
-% - Integrate vibration safely\\
-% - Include sensory input in routines 
-% }\\
-% \hline
-% \end{tabular}
-% \label{tab:sensory_processing_categories}
-% \end{table}
-
 \section{Literature Review}
 Recent projects have explored wearable and assistive technologies to support autistic children, focusing on stress detection, communication, and behavior management. This section reviews key examples from past work to compare their features and limitations with our proposed system.
 \subsection{Preventing, Anticipating and Mitigating Off-Task Behavior in Special Needs Students}
-Authors in this work \cite{ucf_offtask_behavior_project} aimed to help children with transitioning difficulties related to Autism Spectrum Disorder (ASD) or Emotional Behavior Disorder (EBD) in transitioning from one school activity to another while reducing the occurrence of off-task behaviors that may interfere with learning. The project includes the implementation of a wearable sensor system, which has the Atmega328P microcontroller programmed via Arduino Integrated Development Environment  (IDE), meant to collect physiological markers-stress symptoms in terms of heart rate, temperature, and sweating. It incorporates an LED-based countdown timer for upcoming changes and a touchscreen device for giving students calming activities intended to help them handle sensory overload. The project created an effective operational system that real-time-notifies teachers so the pupils would have early intervention; however, challenges include sensor accuracy, as sometimes readings are affected by the environment, and how to engage the interactive device yet prevent distraction from learning. It also needs further study regarding which way should LED countdown be set-on a period basis or time basis. With all these challenges, this project will establish a very good basis to improve the classroom experience for children with ASD and EBD. 
+Authors in this work \cite{ucf_offtask_behavior_project} focuses on supporting children with Autism Spectrum Disorder (ASD) or Emotional Behavior Disorder (EBD) by reducing off-task behavior during activity transitions, which aligns closely with the objectives of our proposed system. Similar to our project, it relies on a wearable sensing approach to monitor physiological indicators of stress, including heart rate, temperature, and sweating, in order to detect stress-related states.\\[0.01cm]
 
-\newpage
+The system integrates a wearable device based on the Atmega328P microcontroller for data acquisition, combined with an external interactive screen that provides calming activities and visual countdowns to prepare children for upcoming transitions. This concept of combining wearable sensing with visual feedback is directly related to our approach of using a wristband together with an interactive screen to support emotional regulation.\\[0.01cm]
+
+However, the authors reported limitations related to sensor sensitivity to environmental factors and the risk of the interactive screen becoming a source of distraction rather than support. These challenges highlight the importance of robust signal processing and carefully designed feedback mechanisms, which our project addresses by focusing on real-time stress detection and smoother, less intrusive task transitions.
+% \newpage
 \subsection{Empatica E4 Wristband}
-The authors in \cite{empatica_EmbracePlus} describe the E4 as a wearable physiological monitoring device designed for continuous, real-time health monitoring in medical and research applications. It provides non-invasive measurement of significant physiological signals including electrodermal activity (EDA), heart rate variability (HRV), skin temperature, and motion activity, and is therefore applicable to the study of stress, emotional responses, neurological diseases, and well-being. With the utilization of advanced biosensors such as photoplethysmography (PPG), infrared thermopile, 3-axis accelerometer, and Bluetooth, the device enables real-time data streaming and cloud-based analysis through Empatica's software platforms. The E4 has widely been used in science research and clinical trials, offering high-quality physiological data for mental illness, sleep research, and stress monitoring. However, costs are high (\$1,690), short battery life, and reduced EDA consistency, which are disadvantages in part for this. It has also been discontinued. However, it has made a really good contribution to the strides made in wearable health monitoring, and lays the foundation for innovations in biometric tracking in the future.
+The authors in \cite{empatica_EmbracePlus} describe the Empatica E4 wristband as a medical-grade wearable device designed for continuous physiological monitoring, making it highly relevant to stress-detection-based systems such as our project. It measures key signals that overlap with our design, including electrodermal activity (EDA), heart-related metrics (HR/HRV), skin temperature, and motion, which are commonly used indicators of stress and emotional arousal.\\[0.01cm]
+
+The E4 demonstrates the feasibility of accurate, real-time physiological stress monitoring using a wrist-worn device, reinforcing the scientific validity of using EDA and heart-related signals as stress markers. This aligns directly with our choice of sensors for detecting emotional stress in children with ASD. \\[0.01cm]
+
+Despite its strong sensing capabilities, the Empatica E4 presents several limitations when considered for practical assistive use with autistic children. These include very high cost, short battery life, and the fact that it has been discontinued. Additionally, it is primarily designed for research and clinical settings rather than child-centered, everyday support. These limitations motivate the need for a more affordable, child-friendly, and application-specific wearable solution, which our project aims to provide.
 
 \subsection{New Tool for Kids \& People with Autism: The Gizmo Watch 3 - Adventure}
-The authors in \cite{verizon_GizmoWatch3_Autism} introduced the Gizmo Watch 3 has been introduced by Verizon and the Autism Society of America for building independence, communication, and security for children and individuals with Autism. Now, the smartwatches boast of GPS tracking and geofencing for reporting location in real-time monitoring, voice-to-text messaging, programmable timers, and reminders for giving a soft touch to everyday activity routines. They are really programmed to encourage a kid's physical activity by step counting and jumping, even offering special games designed for neurodivergent kids. They have shown a lot of potential to make quite an impact on the management of routine activities, safety, and certainly controlled communication through a sturdy design for rough handling. One such hitch, however, is discomfort for sensory-sensitive children and rather limited texting for older users too, requiring more advanced tools for communication. On neither of these counts can Gizmo Watch 3 be considered a medical device. Children with Autism can use such smart applications for the relevant purposes of building structured independence, safety, and an engaging but user-friendly way of living.
+The authors in \cite{verizon_GizmoWatch3_Autism} describe the Gizmo Watch 3 as a smartwatch designed for children, including those with Autism, and focuses on promoting independence and safety. While it is not a medical or stress-monitoring device, it overlaps with our project in terms of being a wearable wristband used by autistic children and supporting daily routines.\\[0.01cm]
+
+The device includes basic motion sensing and programmable timers that help structure activities and transitions, which indirectly relates to our goal of easing task transitions. However, unlike our system, the Gizmo Watch 3 does not measure physiological stress indicators such as heart rate or electrodermal activity, and therefore cannot detect emotional stress in real time.\\[0.01cm]
+
+Furthermore, the watch may cause discomfort for sensory-sensitive children and offers limited adaptability for emotional regulation. These limitations emphasize the gap between general-purpose smartwatches and specialized assistive systems. Our project addresses this gap by combining wearable sensing with real-time emotional stress detection and adaptive calming feedback, tailored specifically to the needs of children with Autism Spectrum Disorder.
 
 
 \clearpage
@@ -525,7 +492,7 @@ A summary of the comparison is presented in Table 2.3 .
 \begin{table}[h]
 \centering
 \small
-\caption{Comparison with other projects}
+\caption{Comparison With Other Projects}
 \vspace{0.5em}
 
 \begin{tabular}{|>{\centering\arraybackslash}m{3cm}
@@ -582,7 +549,7 @@ Cost, Bluetooth range, battery, environment, adaptation time\\
 \$40–80 (prototype-based) &
 \$1,690 &
 \$150 (device only) &
-To be determined later\\
+about 1500 NIS\\
 \hline
 
 \end{tabular}
@@ -590,93 +557,84 @@ To be determined later\\
 \end{table}
 
 Unlike past projects concentrating on monitoring or basic alerts, Our system integrates real-time emotional detection with guided professional support.It includes a wearable wristband equipped with GSR and heart rate sensors to monitor stress indicators, and an external interactive screen where the specialist can display calming visuals and auditory cues relevant to the child's current emotional state.
+
 The system involves the specialist in interpreting information and giving the most appropriate response, rendering the support sensitive to the sensory profile of every child. A visual countdown through an LED ring helps to facilitate transitions between tasks, with the system being cost effective, school friendly, and easily adaptable to the specific needs of autistic children. This adaptive integration of feedback, real time data, and human intervention distinctly separates our project from existing solutions.
 
 \section{Summary}
-In this chapter, we presented the theoretical background needed to understand the key aspects of our project, i.e., stress detection, machine learning, real-time processing of data, decision-making algorithms, and HCI guidelines. We also conducted a literature review where we compared our system with similar existing projects. The comparison outlines how our project stands out by merging real-time emotional detection with interactive, personalized support through both a wearable device and an external screen, especially for children with autism.  
-
+In this chapter, we presented the theoretical background that provides an overview of definition and classifications for Autism, and sensory processing difficulties in Autistic children. We also conducted a literature review where we compared our system with similar existing projects. The comparison outlines how our project stands out by merging real-time emotional detection with interactive, personalized support through both a wearable device and an external screen, especially for children with autism.  
 \chapter{ SYSTEM DESIGN}
 \section{Preface}
 This chapter provides an overview of the necessary hardware and software components intended for our project. It explores various options for each component, presents a conceptual description of the system, and launches a general block diagram. Additionally, the chapter delves into system algorithms and methodologies through the use of flowcharts. Schematic diagrams depict the interactions and interfaces between components.
-\section{ System components and Design alternatives}
+\section{ System Components and Design Alternatives}
 This part describes the hardware and software components and their design alternatives.
 \subsection{Hardware Components}
 \subsubsection{Wearable Device}
 The wearable unit is responsible for detecting physiological stress signs from the child, processing them, and providing sensory feedback.
 \paragraph{Microcontroller \\[0.3cm]}
-The microcontroller is a main component in the wearable device, which collects physiological data from sensors and controls feedback output such as visual cues. There are three available options for the microcontroller ESP-WROOM-32, LilyPad Arduino, and Raspberry Pi Zero W to choose from shown in Table 3.1.
+The microcontroller is a main component in the wearable device, which collects physiological data from sensors. There are two available options for the microcontroller ESP32 3C ZERO, LilyPad Arduino, to choose from shown in Table 3.1.
 
 \clearpage
 \renewcommand{\arraystretch}{1.8} % زيادة المسافة بين الأسطر
 
 \begin{table}[h]
 \centering
-\caption{ Differences between ESP-WROOM-32, LilyPad Arduino, and Raspberry Pi Zero W}
+\caption{Comparison of ESP32 3C ZERO and LilyPad Arduino}
 \vspace{0.5em}
 
 \begin{tabular}{|>{\centering\arraybackslash}m{3.5cm}
                 |>{\centering\arraybackslash}m{3.5cm}
-                |>{\centering\arraybackslash}m{3.5cm}
                 |>{\centering\arraybackslash}m{3.5cm}|}
 \hline
-\textbf{Characteristic} & \textbf{ESP-WROOM-32 \cite{xecor_esp32_vs_arduino}} & \textbf{LilyPad Arduino \cite{makerstore_LilyPad_Mboard}} & \textbf{Raspberry Pi Zero W \cite{cytron_raspi_zero2w}} \\
+\textbf{Characteristic} & \textbf{ESP32 3C ZERO \cite{pihut_esp32_c3_mini}} & \textbf{LilyPad Arduino \cite{makerstore_LilyPad_Mboard}}  \\
 \hline
 
 \textbf{Image} &
-\includegraphics[width=2.5cm]{figure/ESP32 WROOM.jpg} &
-\includegraphics[width=2.5cm]{figure/lilypad-arduino.jpg} &
-\includegraphics[width=2.5cm]{figure/raspberry pi zero.png} \\
+\includegraphics[width=2.5cm]{figure/esp32-c3-zero-1.jpg} &
+\includegraphics[width=2.5cm]{figure/lily.jpg} \\
 \hline
 
 \textbf{RAM} &
-520KB SRAM &
-1KB SRAM &
-512MB \\
+400KB SRAM &
+1KB SRAM \\
 \hline
 
 \textbf{Clock Speed} &
-Up to 240MHz &
-8 MHz &
-1GHz \\
+Up to 160MHz &
+8 MHz \\
 \hline
 
 \textbf{Storage} &
-Up to 16MB Flash &
-16 KB &
-microSD \\
+4MB Flash &
+16 KB \\
 \hline
 
 \makecell{\textbf{Dimensions} \\ \textbf{(L x W x H) mm}} &
-(18mm $\times$ 25.5mm $\times$ 2.8mm) \cite{nabto_iot_esp32} &
-approximately 50mm diameter, height 4.5mm &
-(65mm $\times$ 30mm $\times$ 13mm) \\
+(18mm $\times$ 25mm $\times$ 3mm) &
+approximately 50mm diameter, height 4.5mm\\
 \hline
 
 \textbf{Connectivity} &
 WiFi, Bluetooth &
-No built-in WiFi/Bluetooth &
-WiFi, Bluetooth \\
+No built-in WiFi/Bluetooth \\
 \hline
 
 \textbf{Price} &
 starts from around \$4 &
-starts from \$1 -- \$3 \cite{alibaba_lilypad328} &
-from \$35 -- \$75 \\
+starts from \$1 -- \$3 \cite{alibaba_lilypad328} \\
 \hline
 
 \textbf{Operating Voltage} &
 3.0V--3.3V &
-2.7V--5.5V &
-5V via micro-USB \\
+2.7V--5.5V \\
 \hline
 
 \end{tabular}
 \label{tab:microcontrollers_comparison}
 \end{table}
 
-The ESP-WROOM- 32 was chosen because it’s speed, large memory and built-in WiFi/Bluetooth, making it ideal for real-time sensor data processing and wireless communication in the wearable system.
+The ESP32-C3 Zero was chosen because its size, speed, large memory and built-in WiFi/Bluetooth, making it ideal for real-time sensor data processing and wireless communication in the wearable system.
 \paragraph{Skin Conductance Sensors \\[0.3cm]} 
-Skin conductance is a standard psychophysiological measurement procedure, often referred to as Electrodermal Activity (EDA). It is used as an index of the activity of the sympathetic nervous system, whose role is to generate the body's response, a physiological response triggered by emotionally arousing or stressful stimuli. \\[0.1cm]
+Skin conductance is a standard psychophysiological measurement procedure, often referred to as Electrodermal Activity (EDA). It is used as an index of the activity of the sympathetic nervous system, whose role is to generate the body's response, a physiological response triggered by emotionally arousing or stressful stimuli. 
 
 This response increases sweat gland activity, particularly in areas with a high density of sweat glands, such as the fingers and palms. As emotional or psychological arousal rises, such as during stress or anxiety, the skin's ability to conduct electricity improves due to the increased sweat production \cite{mcilwain2019_autism_healthcare}. During stress, the resistance of the skin drops due to increased secretion in the sweating glands \cite{lord2016_autism_diagnosis}. There are two available options for skin conductance sensors to choose from shown in Table 3.2.
 \clearpage
@@ -684,7 +642,7 @@ This response increases sweat gland activity, particularly in areas with a high 
 
 \begin{table}[h]
 \centering
-\caption{Differences between the Grove Galvanic Skin Response (GSR) sensor \newline and Galvanic Skin Response (GSR) Shimmer3 sensor}
+\caption{Comparison of Grove Galvanic Skin Response (GSR) Sensor \newline and Galvanic Skin Response (GSR) Shimmer3 Sensor}
 \vspace{0.5em}
 
 \begin{tabular}{|>{\centering\arraybackslash}m{4cm}
@@ -728,14 +686,14 @@ Small size, lightweight (28g) \\
 The Grove GSR sensor was chosen due to its affordable price, simple integration process, and compatibility with low-power wearable systems. While premium options like the Shimmer3 GSR offer advanced features and medical-grade precision, the Grove GSR provides enough data resolution for detecting stress related physiological changes, which is the main requirement of the system. Additionally, its compact size and minimal energy requirements make it ideal for embedding within a lightweight wearable device.
 
 \paragraph{Heart Rate Sensor \\[0.3cm]}
-A heart rate sensor is used to monitor the number of heartbeats per minute (BPM). It provides valuable data into a person’s physiological and emotional state, especially in response to stress, anxiety, or physical activity. In wearable health devices, heart rate monitoring helps in detecting abnormal patterns, and assessing stress levels.There are two available options for heart rate sensors to choose from shown in Table 3.3.
+A heart rate sensor is used to monitor the number of heartbeats per minute (BPM). It provides valuable data into a person’s physiological and emotional state, especially in response to stress, anxiety, or physical activity. In wearable health devices, heart rate monitoring helps in detecting abnormal patterns, and assessing stress levels. There are two available options for heart rate sensors to choose from shown in Table 3.3.
 
 \clearpage
 \renewcommand{\arraystretch}{1.8} % زيادة المسافة بين الأسطر
 
 \begin{table}[h]
 \centering
-\caption{Differences between the MAX30102 sensor and Pulse sensor}
+\caption{Comparison of MAX30102 Sensor and Pulse Sensor}
 \vspace{0.5em}
 
 \begin{tabular}{|>{\centering\arraybackslash}m{4cm}
@@ -783,8 +741,8 @@ Always on when powered \\
 \hline
 
 \textbf{Weight} &
-20g &
-Very lightweight \\
+1.1g &
+9g \\
 \hline
 
 \end{tabular}
@@ -800,7 +758,7 @@ A motion sensor can be used to track the movement, position, or rotation of the 
 
 \begin{table}[h]
 \centering
-\caption{Differences between the MPU6050 sensor and ADXL335 sensor}
+\caption{Comparison Of MPU6050 Sensor and ADXL335 Sensor}
 \vspace{0.5em}
 
 \begin{tabular}{|>{\centering\arraybackslash}m{4cm}
@@ -836,16 +794,20 @@ Analog Accelerometer \\
 \label{tab:motion_sensors_comparison}
 \end{table}
 
-The MPU6050 was chosen for this project because it combines a 3-axis accelerometer, 3-axis gyroscope, and an embedded Digital Motion Processor (DMP) in a compact, low-power module.This sensor provides acceleration, orientation, and angular velocity data in all dimensions, making it highly accurate in motion tracking. These motion parameters are essential for detecting physical behaviors and movement patterns that are often stressed in fragile groups of non-aggressive children with autism, such as repeated motions or certain unusual postures of the body.
-\paragraph{Display \\[0.3cm]}
-An addressable LED strip is used as a visual countdown timer to support emotional self-regulation for children with autism. The LED strip is a non-verbal and intuitive method to indicate time duration, such as for breaks and transitions. The LED strip offers both flexibility in visual design and a strong sensory impact, which can help reduce anxiety during routine changes. There are two available options for  LED strips to choose from shown in Table 3.5.
+The MPU6050 was chosen for this project because it combines a 3-axis accelerometer, 3-axis gyroscope, and an embedded Digital Motion Processor (DMP) in a compact, low-power module. This sensor provides acceleration, orientation, and angular velocity data in all dimensions, making it highly accurate in motion tracking. These motion parameters are essential for detecting physical behaviors and movement patterns that are often stressed in fragile groups of non-aggressive children with autism, such as repeated motions or certain unusual postures of the body.
+\paragraph{LED Strip \\[0.3cm]}
+An addressable LED strip is used as a visual countdown timer to support emotional self-regulation for children with autism. 
+
+The LED strip is a non-verbal and intuitive method to indicate time duration, such as for breaks and transitions. 
+
+The LED strip offers both flexibility in visual design and a strong sensory impact, which can help reduce anxiety during routine changes. There are two available options for  LED strips to choose from shown in Table 3.5.
 
 \clearpage
 \renewcommand{\arraystretch}{1.8} % زيادة المسافة بين الصفوف
 
 \begin{table}[h]
 \centering
-\caption{Differences between the WS2812 NeoPixel Ring and APA102}
+\caption{Comparison Of WS2812 NeoPixel Ring and APA102}
 \vspace{0.5em}
 
 \begin{tabular}{|>{\centering\arraybackslash}m{4cm}
@@ -858,7 +820,7 @@ An addressable LED strip is used as a visual countdown timer to support emotiona
 \hline
 
 \textbf{Image} &
-\includegraphics[width=2.5cm]{figure/LED2.jpg} &
+\includegraphics[width=2.5cm]{figure/neopixel.jpeg} &
 \includegraphics[width=2.5cm]{figure/APA102-RGB-LED.jpg} \\
 \hline
 
@@ -886,10 +848,10 @@ less than 4 Mbps \\
 \label{tab:led_pixel_rings}
 \end{table}
 
-The WS2812 NeoPixel Ring was chosen for this project because of its simple integration and for being easily suited for visual feedback applications. It requires only one data line, fully complies with the ESP-WROOM-32 microcontroller, which is going to be used in the project, and prompts bright, individually addressable RGB LEDs \cite{suntechlite_apa102_vs_ws2812b}.
+The WS2812 NeoPixel Ring was chosen for this project because of its simple integration and for being easily suited for visual feedback applications. It requires only one data line, fully complies with the ESP32 C3 ZERO microcontroller, which is going to be used in the project, and prompts bright, individually addressable RGB LEDs \cite{suntechlite_apa102_vs_ws2812b}.
 
 \paragraph{Battery \\[0.3cm]}
-For this project, a Lithium-Ion (Li-ion) battery was selected due to its superior energy density, safety profile, and cycle longevity, which are critical for wearable and healthcare-related applications.
+For this project, a Lithium-Ion (Li-ion) battery was selected due to its superior energy density, safety profile, and it is rechargeable, which are critical for wearable and healthcare-related applications.
  \subsubsection{Interactive Screen}
  Interactive screen is used to present calming audio and visual content to the child under stressful emotional conditions. The screen is also used as a feedback system associated with the wearable device, and it processes incoming data received and responds accordingly. 
 
@@ -902,7 +864,7 @@ There are two available options for microcontrollers to choose from shown in Tab
 
 \begin{table}[h]
 \centering
-\caption{Differences between Raspberry Pi 4B, NVIDIA Jetson Nano}
+\caption{Comparison of Raspberry Pi 3 Model B and NVIDIA Jetson Nano}
 \vspace{0.5em}
 
 \begin{tabular}{|>{\centering\arraybackslash}m{4cm}
@@ -910,17 +872,17 @@ There are two available options for microcontrollers to choose from shown in Tab
                 |>{\centering\arraybackslash}m{4cm}|}
 \hline
 \textbf{Characteristic} &
-\textbf{Raspberry Pi 4B} &
+\textbf{Raspberry Pi 3 model B} &
 \textbf{NVIDIA Jetson Nano \cite{nvidia_jetson_nano_dev}} \\
 \hline
 
 \textbf{Image} &
-\includegraphics[width=2.5cm]{figure/raspberry 4B.jpg} &
+\includegraphics[width=2.5cm]{figure/rp3.png} &
 \includegraphics[width=2.5cm]{figure/Nvivid.jpg} \\
 \hline
 
 \textbf{RAM} &
-2GB / 4GB / 8GB &
+1GB &
 4GB \\
 \hline
 
@@ -945,25 +907,24 @@ Broadcom VideoCore VI &
 \hline
 
 \textbf{Price} &
-Starts from \$60 \cite{amazon_raspberry_pi4_modelb} &
-Starts from \$99 \cite{seeedstudio_jetson_nano} \\
+about 250 NIS \cite{pihut_raspberry_pi_3_model_b} &
+about 2500 NIS \cite{seeedstudio_jetson_nano} \\
 \hline
 
 \end{tabular}
 \label{tab:single_board_computers}
 \end{table}
 
-Raspberry Pi 4B is selected as the main microcontroller of the interactive screen because of the community support it has gathered, multimedia capabilities, and built-in wireless connectivity. Compared to Jetson Nano, it already comes autonomous with WiFi and Bluetooth, thus simplifying communication with the wearable device. The Raspberry Pi 4B also features sufficient processing power and RAM to support real-time video and multimedia content required to calm down the child. Its compact nature, lowered price, and ease to develop render it ideal for use in assistive wearable technology projects like the current one.
-
+Raspberry Pi 3 Model B is selected as the main microcontroller of the interactive screen because of the community support it has gathered, multimedia capabilities, and built-in wireless connectivity. Compared to Jetson Nano, it already comes autonomous with WiFi and Bluetooth, thus simplifying communication with the wearable device. The Raspberry Pi 3 Model B also features sufficient processing power and RAM to support real-time video and multimedia content required to calm down the child. Its compact nature, lowered price, and ease to develop render it ideal for use in assistive wearable technology projects like the current one.
 \paragraph{Display \\[0.3cm]}
-The display function of the interactive screen is among the main parts tasked with displaying comforting images to the child as animation, pictures, or simple games. In addition, when emotionally upset, the child is encouraged to work on the screen directly by means of drawings or scribbles, which may be used as an expressiveness tool to alleviate stress. Hence, display responsiveness and touch are inherent elements.There are two available options for display to choose from shown in Table 3.7.
+The display function of the interactive screen is among the main parts tasked with displaying comforting images to the child as animation, pictures, or simple games. In addition, when emotionally upset, the child is encouraged to work on the screen directly by means of drawings or scribbles, which may be used as an expressiveness tool to alleviate stress. Hence, display responsiveness and touch are inherent elements. There are two available options for display to choose from shown in Table 3.7.
 
 \clearpage
 \renewcommand{\arraystretch}{1.8} % زيادة المسافة بين الصفوف
 
 \begin{table}[h]
 \centering
-\caption{Differences between standard LCD and TFT LCD.}
+\caption{Comparison Of High-Definition Multimedia Interface (HDMI) Touch Screen and Thin-Film Transistor Liquid Crystal Display (TFT) LCD.}
 \vspace{0.5em}
 
 \begin{tabular}{|>{\centering\arraybackslash}m{4cm}
@@ -971,81 +932,66 @@ The display function of the interactive screen is among the main parts tasked wi
                 |>{\centering\arraybackslash}m{4cm}|}
 \hline
 \textbf{Characteristic} &
-\textbf{Standard LCD} &
-\textbf{TFT LCD} \\
+\textbf{7 Inch HDMI Touch Screen \cite{amazon_raspberry_pi_7_touchscreen}} &
+\textbf{TFT LCD \cite{alibaba_lcd_sizes}} \\
 \hline
 
 \textbf{Image} &
-\includegraphics[width=2.5cm]{figure/standardLcd.jpg} &
+\includegraphics[width=2.5cm]{figure/hdmi.jpg} &
 \includegraphics[width=2.5cm]{figure/TFT.jpg} \\
 \hline
 
-\textbf{Color Display} &
-Typically monochrome or limited color &
-Full color \\
+\textbf{Display Type} &
+TFT LCD with HDMI interface &
+TFT LCD \\
 \hline
 
-\textbf{Brightness} &
-Low to moderate &
-High brightness with backlight \\
+\textbf{Screen Size} &
+7 inches &
+Small to medium (2.4"–4.3" typical) \\
 \hline
 
-\textbf{Viewing Angle} &
-Narrow &
-Wide viewing angle \\
-\hline
-
-\textbf{Refresh Rate} &
-Slow (suitable for static images/text) &
-Fast (supports animations and videos) \\
+\textbf{Resolution} &
+1024 × 600 &
+Low to moderate ( 480×320) \\
 \hline
 
 \textbf{Touchscreen Support} &
-Rare or not supported &
-Widely available with resistive/capacitive options \\
-\hline
-
-\textbf{Power Consumption} &
-Low &
-Moderate \\
+USB touch (capacitive or resistive) &
+Available (mostly resistive) \\
 \hline
 
 \textbf{Image Quality} &
-Basic &
-High resolution and sharpness \\
-\hline
-
-\textbf{Response Time} &
-Slow &
-Fast \\
+High resolution and sharpness &
+Acceptable \\
 \hline
 
 \textbf{Cost} &
-$\approx\$2$ \cite{alibaba_lcd_module_2004} &
-$\approx\$7$ \cite{alibaba_lcd_sizes}\\
+$\approx\$39$ &
+$\approx\$7$ \\
 \hline
 
 \textbf{Interface Options} &
-Parallel or serial (limited compatibility) &
-SPI, I2C, and parallel (well-supported by ESP32) \\
+HDMI (display) + USB (touch) &
+SPI, I2C, and parallel \\
 \hline
 
 \end{tabular}
 \label{tab:lcd_display_comparison}
 \end{table}
 
-\clearpage
-TFT LCD was chosen for the ability to display colorful, reactive images and respond to touch,  which is necessary for soothing and captivating the child.  It can be used for scribbling or drawing when the child is upset, offering a healthy outlet. Unlike standard LCDs, TFT screens provide better brightness, viewing angles, and faster refresh rates, making them ideal for animations and content. Despite slightly higher power use, their benefits in usability and expressiveness make TFT LCD the best fit for this project.
 
+The HDMI 7-inch touch display was chosen for the ability to display colorful, reactive images and respond to touch,  which is necessary for soothing and captivating the child.  It can be used for scribbling or drawing when the child is upset, offering a healthy outlet. Unlike TFT LCDs that require complex wiring, The HDMI display operates as a plug-and-play monitor.
 
 \paragraph{Speaker \\[0.3cm]}
 The speaker component is essential in offering auditory feedback to the child during emotional distress. The feedback may be soothing music, calm nature, or simple audio messages. Choosing a speaker that will offer clear, pleasant, and non-intrusive sounds is critical, especially for children with autism, who are sound-sensitive.There are two available options for speakers to choose from shown in Table 3.8. \\[0.1cm]
 
+\clearpage
 \renewcommand{\arraystretch}{1.8} % زيادة المسافة بين الصفوف
 
 \begin{table}[h]
 \centering
-\caption{Differences between USB Speaker and Bluetooth Speaker Module (MH-M28)}
+\caption{Comparison of USB Speaker and Bluetooth Speaker }
 \vspace{0.5em}
 
 \begin{tabular}{|>{\centering\arraybackslash}m{4cm}
@@ -1054,12 +1000,12 @@ The speaker component is essential in offering auditory feedback to the child du
 \hline
 \textbf{Characteristic} &
 \textbf{USB Speaker} &
-\textbf{Bluetooth Speaker Module (MH-M28)} \\
+\textbf{Bluetooth Speaker } \\
 \hline
 
 \textbf{Image} &
 \includegraphics[width=2.5cm]{figure/USB speaker.jpg} &
-\includegraphics[width=2.5cm]{figure/Blutooth speaker.jpg} \\
+\includegraphics[width=2.5cm]{figure/blespeaker.jpeg} \\
 \hline
 
 \textbf{Audio Type} &
@@ -1094,234 +1040,832 @@ Wireless (Bluetooth) \\
 
 \textbf{Price} &
 $\approx\$14$ \cite{robotistan_usb_speaker} &
-$\approx\$7$ \cite{flipkart_bluetooth_receiver} \\
+$\approx\$15$ \cite{flipkart_bluetooth_receiver} \\
 \hline
 
 \end{tabular}
 \label{tab:speaker_comparison}
 \end{table}
 
-The USB Speaker was chosen due to its wired connection that is stable, sound output of good quality, and suitability for devices like Raspberry Pi or similar controllers that can be used as a USB host. It can be ideal in offering stable audio feedback with no chance of wireless module pairing issues. It is simple and
-rugged, thus ideal for use in children with Autism Spectrum Disorder stress management systems.
-
+The Bluetooth Speaker was chosen due to its wireless connection, portability, sound output of good quality, and suitability for devices like Raspberry Pi . It can be ideal in offering independently from the main system power supply increasing  flexibility in placement and use.
 \section{Software Components and Design Alternatives}
-This part explains the main software components of the Smart Assistant System for Children with Autism, compares possible design choices, and justifies the selected options based on project requirements.
+This section outlines the software components critical to the Smart Assistant System for Children with Autism.
+
 \subsection{Stress Detection}
-The stress detection is the system's core, determining if the child is under stress. This detection is essential for alerting specialists and for triggering the feedback mechanisms, be it visual or auditory. The system continuously collects data and analyzes it from the Galvanic Skin Response sensor (GSR), Heart Rate sensor (HR), and Motion sensor sensor, HR sensor, and Motion sensor to classify an emotional state of the child. This detection has to be efficient and reliable in decision making. So, we have listed different options to use as a detector.
-\subsubsection{Support Vector Machine (SVM)}
-SVMs are a set of supervised learning methods used for classification, regression and outlier detection \cite{scikit_svm}. SVMs are common tools for classification. They find the hyperplane that best separates different classes in a high-dimensional space. By training an SVM model with labeled physiological data, it can learn variations existing between emotional states, thus making the SVM most effective in multi-class classification problems. In our project, SVMs can be used to determine whether physiological response occurs because of stress or due to physical activity, thus providing greater reliability to the stress detection system \cite{mdpi_sensors_wearable}.
 
-\subsubsection{ Random Forest}
-Random Forests are groups of decision trees that work together to make a final prediction. Each tree tries to classify independently, with the result finally depending on majority voting between all the trees \cite{pmc_sensors_asd}, as shown in Figure 3.1. The algorithm is implemented in this project for the classification of children's emotional states into "stressed" or "relaxed" using physiological sensor data. Each decision tree looks at only a subset of data and makes a vote toward the final prediction. \\[0.2cm]
+The stress detection is the system's core, determining if the child is under stress. This detection is essential for alerting specialists and for triggering the feedback mechanisms, be it visual or auditory. The system continuously collects data and analyzes it from the Galvanic Skin Response sensor (GSR), Heart Rate sensor (HR), and Motion sensor sensor, HR sensor, and Motion sensor to classify an emotional state of the child. This detection has to be efficient and reliable in decision making.
+\subsubsection{Threshold-Based Stress Detection}
+Threshold-based stress detection is a rule-based technique that sorts out stress by measuring the physiological signals in real-time against the pre-established threshold values. The approach typically starts with a baseline calibration phase, during which normal Heart Rate (HR) and Galvanic Skin Response (GSR) levels are defined based on baseline values reported in existing scientific studies \cite{hr_stress_asd_2019} \cite{eda_baseline_threshold_2023}. 
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{figure/Random Forest2.png}
-    \caption [Random Forest]{Random Forest \cite{serokell_random_forest}}
-    \label{fig:system_description}
-\end{figure}
+During the process, stress is assumed when HR and GSR values exceed their baseline by a certain percentage. To improve reliability, signal smoothing may be applied, especially for GSR readings. Moreover, the integration of motion data could help determine which changes in physiology due to stress were not brought about by physical activity or other movements, for example, stimming. This approach enables simple and real-time stress classification suitable for embedded systems.
+% \subsubsection{ Random Forest}
+% Random Forests are groups of decision trees that work together to make a final prediction. Each tree tries to classify independently, with the result finally depending on majority voting between all the trees \cite{pmc_sensors_asd}, as shown in Figure 3.1. The algorithm is implemented in this project for the classification of children's emotional states into "stressed" or "relaxed" using physiological sensor data. Each decision tree looks at only a subset of data and makes a vote toward the final prediction. 
 
-Our choice of the algorithm to be used for stress detection is the Random Forest algorithm instead of Support Vector Machine (SVM) because SVM requires extensive parameter tuning and may not scale efficiently with high-dimensional, non-linear physiological data. In contrast, Random Forest being an ensemble method performs better with complex data, is more robust to noise, and requires minimal parameter optimization \cite{geeksforgeeks_rf_vs_svm}.
+
+% Our choice of the stress detection approach is the threshold-based method instead of the Random Forest algorithm because Random Forest requires a labeled dataset, offline training, and higher computational resources to perform reliable classification. In contrast, the threshold-based approach relies on baseline-calibrated physiological limits, enabling direct and interpretable decision-making with minimal processing overhead. This makes it more suitable for real-time implementation on resource-constrained wearable systems, while also reducing complexity and ensuring stable performance during continuous monitoring. 
 
 \subsection{Communication Protocols}
-In our project, we define protocols between different system components for communication and data interchange. The protocols allow system integration and operability. The protocols include Wi-Fi that enables a fast wireless network for data transfer, BLE  for short-range wearable communication, and MQTT which is a lightweight messaging protocol for device updates as described in Table 3.9 to help selection based on project needs and limitations. Their particular characteristics are provided to support decisions. \\[0.3cm]
-Additionally, since our system includes a mobile app for specialists, the selected protocols must integrate seamlessly with the application development environment. The app will be developed using React Native to support both Android and iOS devices.
+In our project, we define protocols between different system components for communication and data interchange. The protocols allow system integration and operability. The protocols include Wi-Fi and BLE as described in Table 3.9 to help selection based on project needs and limitations. Their particular characteristics are provided to support decisions.
 
 \clearpage
 \renewcommand{\arraystretch}{1.8} % زيادة المسافة بين الصفوف
 
 \begin{table}[h]
 \centering
-\caption{ Differences between Communication protocols}
+\caption{ Differences Between Communication Protocols}
 \vspace{0.5em}
 
 \begin{tabular}{|>{\centering\arraybackslash}m{3.5cm}
-                |>{\centering\arraybackslash}m{3.5cm}
                 |>{\centering\arraybackslash}m{3.5cm}
                 |>{\centering\arraybackslash}m{3.5cm}|}
 \hline
 \textbf{Feature} &
 \textbf{BLE \cite{novelbits_ble_power}} &
-\textbf{Wi-Fi \cite{techtarget_wifi}} &
-\textbf{MQTT \cite{hivemq_mqtt}} \\
+\textbf{Wi-Fi \cite{techtarget_wifi}} \\
 \hline
 
 \textbf{Type} &
 Short-range Wireless Communication &
-High speed Wireless Networking &
-Publish-Subscribe Protocol (Application Layer) \\
+High speed Wireless Networking \\
 \hline
 
 \textbf{Use Case} &
-Communication between wearable device and mobile app &
-Data transfer between mobile app and interactive display &
-IoT messaging, notifications, sensor updates \\
+Communication between wearable device, mobile application, and interactive display  &
+Audio device pairing (speaker connection) \\
 \hline
 
 \textbf{Connection Type} &
 Intermittent (low duty cycle) &
-Persistent (infrastructure or P2P) &
-Persistent (broker-based) \\
+Persistent (infrastructure or P2P) \\
 \hline
 
 \textbf{Reliability} &
 Medium (depends on interference and environment) &
-High (reliable via TCP/IP) &
-High (QoS levels 0, 1, 2) \\
+High (reliable via TCP/IP) \\
 \hline
 
 \textbf{Overhead} &
 Low &
-High (due to TCP/IP stack) &
-Low \\
+High (due to TCP/IP stack) \\
 \hline
 
 \textbf{Power Usage} &
 Very low &
-High &
-Low \\
+High \\
 \hline
 
 \textbf{Range} &
 10--100 meters &
-Up to 100 meters &
-Depends on network (typically local/Wi-Fi coverage) \\
+Up to 100 meters \\
 \hline
 
 \textbf{Latency} &
 Low &
-Moderate &
-Very Low (ideal for real-time alerts) \\
+Moderate \\
 \hline
 
 \end{tabular}
 \label{tab:ble_wifi_mqtt}
 \end{table}
 
+In our project, Wi-Fi acts as the main communication protocol for the transfer of data among the wearable device, mobile app, and interactive display, also giving stable and reliable connection.Bluetooth is used only for  linking the speaker to the interactive display, which gives a simple and wireless audio solution. 
 
-For our project, we choose Wi-Fi and BLE. Short-range communication to mobile apps from wearables is provided by BLE and is ideal for sensors, because of its low power consumption. Wi-Fi connectivity allows for stable and fast data transfer between the interactive display and mobile app. Both options offer a suitable mix of efficiency, performance and connectivity.
 
-
-\clearpage
-\section{Conceptual system description}
-The conceptual system design here and the system block diagram in the next figure integrate multiple physiological sensors (Grove galvanic skin response, Heart Rate, Motion) for data collection, a ESP-WROOM- 32 processing unit to detect stress. a LED ring is used as a timer for transition between activities and the specialist can set the time for activity. It will send notifications to a specialist's mobile app when it detects stress. The specialist then uses an interactive screen with audio-visual feedback to provide calming interventions for the child’s sensory sensitivities. \\[0.2cm]
-
+\section{Conceptual System Description}
+The conceptual system design here and the system block diagram in the next figure integrate multiple physiological sensors (Grove galvanic skin response, Heart Rate, Motion) for data collection, a ESP32 C3 ZERO processing unit to detect stress. a LED ring is used as a timer for activities and the specialist can set the time for activity. It will send notifications to a specialist's mobile app when it detects stress. The specialist then uses an interactive screen with audio-visual feedback to provide calming interventions for the child’s sensory sensitivities. 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.7\textwidth]{figure/conceptual diagram2.jpg}
-    \caption{ System conceptual diagram } 
+    \caption{ System Conceptual Diagram } 
     \label{fig:system_description}
 \end{figure} 
 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth]{figure/blockdiagram4.drawio.png}
-    \caption{ System block diagram}
+    \includegraphics[width=\textwidth]{figure/bdd5.jpg}
+    \caption{ System Block Diagram}
     \label{fig:system_description}
 \end{figure}
 
-% \clearpage
+\clearpage
 \section{ Algorithms and Methodologies}
 \subsection{Stress Detection Pseudo Code}
-This pseudo code defines the detection of stress using physiological sensors,to distinguish between physical exercise and emotional stress, physiological signals Heart Rate (HR) and Galvanic Skin Response (GSR) are processed together with motion sensor signals. Stress is identified only when physiological signals are high with little physical movement. This helps avoid false positives due to exercise or play. 
-
-
+This pseudocode describes the threshold-based stress detection logic implemented on the wearable device. HR and GSR signals are analyzed relative to baseline values, while motion features extracted from the MPU6050 are used to differentiate between physical activity and repetitive motion (stimming) from emotional stress. To reduce noise, GSR is smoothed before applying thresholds.
 
 \begin{tcolorbox}[colback=black!5!white, colframe=black!75!white, title=Pseudo Code for Stress Detection]
 \begin{verbatim}
-gsr = readGSR()
-hr = readHeartRate()
-motion = readMotionLevel()
-if motion < motion_threshold:
-    # Low motion: More likely to be emotional stress
-    if gsr > GSR_threshold and hr > HR_threshold:
-        stress_level = "High"
-    elif gsr > GSR_threshold:
-        stress_level = "Medium"
-    else:
-        stress_level = "Normal"
-else:
-    features = extractFeatures(gsr, hr, motion)
-    stress_level = predictWithRandomForest(features)
+START
+
+Initialize sensors (HR, GSR, Motion)
+Load baseline HR and baseline GSR values
+
+LOOP
+    Read Heart Rate
+    Compute average BPM
+
+    Read GSR value
+    Apply smoothing filter
+
+    Read motion sensor data
+    Classify motion as:
+        LOW
+        ACTIVITY
+        STIMMING
+
+    Compare HR and GSR with baseline thresholds
+
+    IF motion == LOW THEN
+        IF HR is high AND GSR is high THEN
+            State = HIGH STRESS
+        ELSE IF HR is moderate OR GSR is moderate THEN
+            State = MODERATE STRESS
+        ELSE
+            State = NORMAL
+        END IF
+
+    ELSE IF motion == ACTIVITY THEN
+        IF HR and GSR are strongly high THEN
+            State = HIGH STRESS DURING ACTIVITY
+        ELSE IF HR or GSR are moderate THEN
+            State = MODERATE STRESS DURING ACTIVITY
+        ELSE
+            State = PHYSICAL ACTIVITY
+        END IF
+
+    ELSE IF motion == STIMMING THEN
+        IF HR and GSR are high THEN
+            State = HIGH STRESS WITH STIMMING
+        ELSE IF HR or GSR are moderate THEN
+            State = MODERATE STRESS WITH STIMMING
+        ELSE
+            State = STIMMING WITHOUT STRESS
+        END IF
+    END IF
+END LOOP
+
 \end{verbatim}
 \end{tcolorbox}
 
 \subsection{Interactive Screen Control Pseudo Code}
-The following pseudo code outlines the core workflow of the Interactive Screen subsystem. After the specialist receives a stress alert via the mobile application, they can directly use the screen’s touch interface to adjust brightness, audio, and visual content, or control from mobile application. \\[0.3cm]
-
+The following pseudo code outlines the core workflow of the Interactive Screen subsystem. The operations of the screen can be done from the mobile application exclusively utilized by the specialist. The specialist can control the type of relaxing response shown on the screen without having to work with the screen directly using the mobile application.
 \begin{tcolorbox}[colback=black!5!white, colframe=black!75!white, title=Pseudo Code for Interactive Screen Control]
 \begin{verbatim}
-event = receive_event()
+START
 
-# Use touch screens to adjust brightness, audio, and visual content 
-if event == "TOUCH_INPUT":
-    open_control_menu()
-    apply_changes_from_touch()
+Launch interactive screen interface
+Wait for control command from supervisor mobile app
 
-# Manual control command from mobile app
-if event == "ADJUST_FEEDBACK":
-    set_brightness(value)
-    set_audio_volume(value)
-    show_animation(content_id)
+IF command == "COLOR":
+    Display calming colors
 
-# Stop all interventions (via touch or app)
-if event == "STOP_FEEDBACK":
-    stop_audio()
-    reset_brightness()
-    clear_screen()
+ELSE IF command == "VIDEO":
+    Play relaxing video
+
+ELSE IF command == "BREATHING":
+    Show breathing exercise animation
+
+ELSE IF command == "STOP":
+    Stop all content and reset screen
+END
 \end{verbatim}
 \end{tcolorbox}
 
 \clearpage
-\subsection{Sequence diagram}
+
+\subsection{Sequence Diagram}
 
 The sequence diagram shows the stress detection system and support task transitions , it shows the flow from detecting the stress signs from the sensors in the wearable device to alerting the specialist to take the suitable decision. \\[0.3cm]
 
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{figure/seq3.png}
-    \caption{ Sequence diagram}
+    \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{figure/sequance1.png}
+    \caption{ Sequence Diagram}
     \label{fig:system_description}
 \end{figure}
 
 
-\clearpage
-\section{ Schematic diagram}
-The schematic diagram shows the hardware layout of the wearable device.The ESP32 microcontroller serves as the central unit, connected to the GSR sensor,MPU6050 motion sensor and the MAX30102 heart rate sensor for collecting physiological data. It also shows the WS2812 LED ring that provides the visual feedback.
 
-\begin{figure}[h]
+\section{ Schematic Diagram}
+The schematic diagram shows the hardware layout of the wearable device.The ESP32 C3 ZERO microcontroller serves as the central unit, connected to the GSR sensor,MPU6050 motion sensor and the MAX30102 heart rate sensor for collecting physiological data. It also shows the WS2812 LED ring that provides the visual feedback and a rechargeable lithium battery with a TP4056 protection and charging module, as well as a voltage boost circuit to ensure stable power delivery and safe operation of the wearable device.
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth,height=0.8\textheight,keepaspectratio]{figure/Schematic_wearable2.png}
-    \caption{ Schematic diagram of wearable device}
-    \label{fig:system_description}
+    \includegraphics[width=0.7\textwidth,height=0.45\textheight,keepaspectratio]{figure/schemwearable.png}
+    \caption{Schematic Diagram of Wearable Device}
+    \label{fig:schem_wearable}
 \end{figure}
 
-\clearpage
-The schematic diagram here shows the hardware layout of the interactive screen module. A Raspberry Pi 4B serves as the main processing unit, interfacing with a TFT LCD display through SPI communication for visual output. A USB speaker is connected to provide audio feedback.
-\begin{figure}[h]
+The schematic diagram here shows the hardware layout of the interactive screen module. A Raspberry Pi 3 Model B serves as the main processing unit, interfacing with a HDMI display for visual output. A Bluetooth speaker is connected to provide audio feedback.
+\begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth,height=0.8\textheight,keepaspectratio]{figure/Schematic_AutismSense_InteractiveScreen2.png}
-    \caption{ Schematic diagram of Interactive Screen}
-    \label{fig:system_description}
+    \includegraphics[width=0.7\textwidth,height=0.45\textheight,keepaspectratio]{figure/schemscreen.png}
+    \caption{Schematic Diagram of Interactive Screen}
+    \label{fig:schem_screen}
 \end{figure}
+
 
 \section{Summary}
 In this chapter, we have discussed the system hardware and software components with their alternatives. The conceptual description of the system and the general flow of the system with all necessary diagrams are presented, too.
 
-\chapter{Conclusion}
+\chapter{Implementation}
+\section{Overview}
+This chapter describes the implementation part of the project in more detail. It dives deep into the different hardware components of the system and its software with all of its modules.
+\section{Hardware Implementation}
+In the previous chapter, we showed how the components are interrelated to each other. This section describes how the hardware components were physically assembled and connected. The whole hardware implementation consists of two main subsystems, which are a wearable stress detection device and an interactive screen module.
+
+\subsection{Prototype Setup}
+Our prototype consists of  two main components: a wearable device for use on the child’s wrist and an interactive screen located in the environment, as shown in Figure~\ref{fig:prototype_design}(a) and (b).\\[0.01cm]
+The wearable device integrates physiological sensors (heart rate and galvanic skin response), a motion sensor, and an ESP32 microcontroller for local processing, all enclosed in a compact housing and powered by a LiPo battery, while the interactive screen component is a combination of a Raspberry Pi, a display screen, and a speaker. The enclosures of both the wearable and the interactive screen were designed to be fabricated using a 3D printer.
+
+\clearpage
+\begin{figure}[h]
+    \centering
+
+    \begin{subfigure}[t]{0.42\textwidth}
+        \centering
+        \includegraphics[height=4.5cm]{figure/wearabledesign.png}
+        \caption{Wearable Device Design}
+        \label{fig:design_wearable}
+    \end{subfigure}
+    \hspace{0.6cm}
+    \begin{subfigure}[t]{0.42\textwidth}
+        \centering
+        \includegraphics[height=4.5cm]{figure/interactivescreendesign2.jpeg}
+        \caption{Interactive Screen Design}
+        \label{fig:design_screen}
+    \end{subfigure}
+
+    \caption{Prototype Design Showing The Wearable Device and The Interactive Screen Module}
+    \label{fig:prototype_design}
+\end{figure}
+
+\subsection{Wearable Stress Detection Device}
+The wearable stress detection device is responsible for monitoring the child’s physiological signals and providing visual feedback. It is built around an ESP32 microcontroller, which is the main processing device.
+
+\subsubsection{Sensing Unit}
+The sensing unit integrates multiple physiological sensors connected to the ESP32 microcontroller to detect stress-indicative aspects.
+
+\begin{itemize}
+    \item \textbf{(MAX30102) Heart Rate Sensor}
+
+    We connected MAX30102 sensor to the ESP32, with its VIN pin to 3.3V, SDA to GPIO 8, and SCL to GPIO 9 with a unique I2C address. It is used to measure the child’s heart rate. It is placed on the index finger to ensure stronger and more stable signal acquisition due to higher blood perfusion compared to wrist-based measurements.
+
+    \item \textbf{Galvanic Skin Response (GSR) Sensor}
+
+    We connected the GSR sensor to the ESP32, with its VCC pin to 3.3V, SIG to GPIO 4. It measures variations in skin conductance associated with emotional arousal and stress.
+
+    \item \textbf{(MPU6050) Motion Sensor}
+
+    We connected the MPU6050 sensor to the ESP32, with its VIN pin to 3.3V, SDA to GPIO 8, and SCL to GPIO 9 with a unique I2C address. It provides motion and acceleration data, which is used to differentiate emotional stress from physical activity.
+\end{itemize}
+
+\subsubsection{Visual Feedback Module}
+The wearable device includes a WS2812 NeoPixel LED ring used as a visual countdown timer; we connected this to GPIO 2. The LED ring acts as non-verbal visual cues to support task transitions and scheduled activities, helping reduce anxiety caused by sudden changes.
+
+\subsubsection{Power Supply}
+The wearable device is powered by a rechargeable battery, allowing it to be used conveniently and portably when worn by a child.
+
+\subsection{Interactive Screen Module}
+The interactive screen module provides calming visual and auditory feedback to the child when stress is detected. It is designed to operate as an external support unit within the child’s environment and is controlled through a Raspberry Pi.
+
+\begin{itemize}
+    \item \textbf{Raspberry Pi}
+
+    The Raspberry Pi acts as main controller for the interactive screen. It runs the necessary software to manage visual content and receive control commands from mobile application.
+
+    \item \textbf{Display Screen}
+
+    The display screen is connected to a Raspberry Pi via HDMI and it is utilized to display calming videos, animations, and guided breathing exercises.
+
+    \item \textbf{Speaker}
+
+    A speaker is connected to the Raspberry Pi with Bluetooth to deliver soothing sounds or voice instructions.
+\end{itemize}
+
+\section{Software Implementation}
+This section describes the software implementation of AutiSense. The system enables real-time physiological sensing, threshold-based stress detection, and calming responses through an interactive screen. In addition, the system includes a mobile application for real-time monitoring and calming mode selection, and a Telegram Bot for stress alert notifications.
+
+\subsection{Wearable Device Software}
+The firmware code of the wearable device was developed using the ESP32 with the Arduino development environment. Based on the ESP32 readings from the physiological sensors and motion sensors, the calibration procedure for the baselines, the smoothing technique for noise removal, and the decision-making method based on thresholds were implemented with the objective of identifying the status of the child (normal, stressed, or physically active).
+
+\subsubsection{Libraries and Sensor Communication}
+The firmware integrates several libraries to support sensor communication, signal processing, networking, and user feedback. \\[0.1cm]
+
+Sensor and hardware-related libraries include:
+\begin{itemize}
+    \item \textbf{I2C Communication (Wire library)}
+
+    It is used to connect MAX30102 and MPU-6050 on the I2C bus. The MAX30102 has a default I2C address of 0x57 and the MPU-6050 has a default address of 0x68, and therefore they can share the I2C bus without conflict.
+
+    \item \textbf{MAX3010x libraries}
+
+    used to extract heart rate readings from the PPG signal.
+    \item \textbf{Adafruit MPU6050 library}
+
+    used to compute motion level based on acceleration readings.
+    \item \textbf{Adafruit NeoPixel library}
+    used to control the WS2812 NeoPixel ring as a visual timer for sessions and activities.
+\end{itemize}
+
+Network and communication libraries include:\\[0.1cm]
+\begin{itemize}
+    \item \textbf{WiFi library}
+    Enables the wearable device to connect to the local Wi-Fi network.
+    \item \textbf{WebServer library}
+    Used to host lightweight HTTP endpoints for real-time data access and system monitoring.
+
+    \item \textbf{HTTPClient and WiFiClientSecure libraries}
+    Used to send HTTP and HTTPS requests to external services, including secure communication with the Telegram Bot API for stress alert delivery.
+
+\end{itemize}
+
+\subsubsection{Baseline Calibration and Smoothing}
+The calibration technique introduced to enhance stability and to account for individual variations allows the wearable device to first perform an initial calibration procedure to determine the values for the heart and GSR sensors.
+
+To improve the robustness of the GSR signal prior to threshold evaluation, we apply an exponential moving average (EMA) low-pass filter. The EMA is computed recursively as
+\begin{equation}
+\mathrm{EMA}_t = \alpha x_t + (1-\alpha)\mathrm{EMA}_{t-1},
+\end{equation}
+where $x_t$ is the current GSR sample and $\alpha$ controls the trade-off between responsiveness and noise suppression \cite{NIST_ES}.
+
+Exponential smoothing is widely used in practice to reduce measurement noise and mitigate motion/contact artifacts in electrodermal activity (EDA/GSR) preprocessing pipelines \cite{PosadaChon2020}.
+
+GSR readings are smoothed using an Exponential Moving Average(EMA) to reduce sudden spikes and measurement noise before applying the stress logic.
+\subsubsection{Threshold-Based Stress Detection}
+This threshold-based approach is supported by prior studies, which show that baseline-corrected increases in heart rate can precede stress-related behaviors in children with autism \cite{hr_stress_asd_2019}. Additionally, adaptive, baseline-relative thresholding of electrodermal activity improves sensitivity to meaningful arousal changes across individuals \cite{eda_baseline_threshold_2023}. \\[0.1cm]
+
+As shown in Figure~\ref{fig:hr_equation}, Heart rate values are not evaluated based on a single instantaneous beat. Instead, the system computes the average heart rate over a sliding window of five consecutive beats, which reduces short-term fluctuations and sensor noise before applying the threshold-based stress decision. The mathematical formulations used to compute the heart rate and GSR ratios are shown in Figure~\ref{fig:gsr_equation} and Figure~\ref{fig:threshold_logic}.
+
+\begin{figure}[h]
+    \centering
+
+    % ===== row 1 =====
+    \begin{subfigure}[t]{0.45\textwidth}
+        \centering
+        % قص من الأعلى/الأسفل ليصير شكل banner
+        \includegraphics[height=3.2cm, width=\linewidth, keepaspectratio,
+        trim=0cm 1.6cm 0cm 1.6cm, clip]{figure/codehrbuffer.png}
+        \caption{Five-beat averaged heart rate used for threshold evaluation.}
+        \label{fig:hr_equation}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.55\textwidth}
+        \centering
+        \includegraphics[height=3.2cm, width=\linewidth, keepaspectratio,
+        trim=0cm 1.6cm 0cm 1.6cm, clip]{figure/codegsr.png}
+        \caption{Baseline-relative GSR ratio}
+        \label{fig:gsr_equation}
+    \end{subfigure}
+
+    \vspace{0.4cm}
+
+    % ===== row 2 (centered) =====
+    \begin{subfigure}[t]{0.55\textwidth}
+        \centering
+        \includegraphics[height=3.2cm, width=\linewidth, keepaspectratio,
+        trim=0cm 1.6cm 0cm 1.6cm, clip]{figure/codehrratio.png}
+        \caption{Baseline-heart rate ratio}
+        \label{fig:threshold_logic}
+    \end{subfigure}
+
+    \caption{Threshold-based stress computation equations and logic}
+    \label{fig:stress_equations}
+\end{figure}
+
+\subsubsection{Distinguishing Stress from Physical Activity}
+Motion analysis in the AutiSense system helps differentiate stress-induced physiological responses from those stemming from physical movement in children with autism. Elevated heart rate or electrodermal activity during play, stimming, or emotional distress could lead to false-positive stress detection if motion is not considered. The motion module's goal is to identify and distinguish between general physical activity and repetitive stimming behaviors associated with stress or self-regulation.\\[0.01cm]
+
+The MPU6050 (accelerometer + gyroscope) computes three interpretable motion features over a 1-second window at approximately 50 Hz : 
+\begin{enumerate}[label=(\arabic*)]
+    \item $\mathbf{A_{\text{rms}}}$: the root mean square (RMS) of dynamic acceleration after removing gravity, representing movement intensity.
+    
+    \item $\mathbf{B_{\text{vib}}}$: the mean absolute difference between consecutive acceleration samples, capturing rapid repetitive vibration typical of hand-flapping (stimming).
+    
+    \item $\mathbf{C_{\text{gyro,rms}}}$: the RMS magnitude of the gyroscope readings, reflecting rotational activity.
+\end{enumerate}
+
+To obtain device-specific thresholds, motion data was collected in REST, ACTIVITY, and STIMMING sessions. Thresholds were computed using a midpoint-based formulation between rest and target motion states, as shown in the following equation~\eqref{eq:th} \cite{tum_motion_2013}:\\[0.1cm]
+
+\begin{equation}
+TH = \frac{\max(\mathrm{REST}) + \operatorname{median}(\mathrm{TARGET})}{2}
+\label{eq:th}
+\end{equation}
+
+
+Motion is classified every second into one of three states based on motion features and predefined thresholds.
+
+\begin{itemize}
+    \item \textbf{ACTIVITY}: motion is classified as ACTIVITY if \cite{foerster_activity_1999}
+    \[
+    A_{\text{rms}} > TH_A \quad \text{or} \quad C_{\text{gyro,rms}} > TH_C
+    \]
+
+    \item \textbf{STIMMING}: motion is classified as STIMMING if \cite{tum_motion_2013}
+    \[
+    B_{\text{vib}} > TH_B
+    \]
+    and the ACTIVITY condition is not satisfied.
+
+    \item \textbf{LOW}: motion is classified as LOW when neither ACTIVITY nor STIMMING conditions are met.
+\end{itemize}
+
+To reduce classification jitter, decisions are temporally stabilized. The ACTIVITY state is confirmed after 2~seconds of persistence, while both STIMMING and LOW states require 4~seconds of persistence \cite{tum_motion_2013}.
+
+The resulting motion state is then used to contextualize (HR) and (GSR): during ACTIVITY, moderate rises are treated as exertion unless both signals indicate strong stress; during STIMMING, concurrent (HR) and (GSR) elevation indicates stress while isolated stimming is treated as non-stress; during LOW motion, significant HR and GSR increases are directly interpreted as stress \cite{pmc_stress_monitoring_2010}.
+
+
+\subsection{Interactive Screen Software}
+The interactive screen module was implemented using Python 3 on Raspberry Pi. a local full-screen GUI application that displays calming visual content using Tkinter.
+
+\begin{lstlisting}
+sudo apt install -y python3-tk
+\end{lstlisting}
+To enable remote control, a lightweight Flask web server runs locally on the Raspberry Pi and listens for HTTP commands sent from the mobile application over the local network. Additional dependencies included Pillow for image rendering in Tkinter, pygame for audio playback, and VLC for full-screen video playback.
+\begin{lstlisting}
+pip3 install flask pygame pillow
+sudo apt install -y vlc
+\end{lstlisting}
+
+\subsubsection{GUI Modes and Content}
+The screen provides multiple calming modes designed for stress reduction:
+\begin{itemize}
+    \item \textbf{Breathing Mode}
+
+    guided breathing sequence using images (flower/candle) synchronized with short voice prompts.
+    \item \textbf{Calming Video Mode}
+
+    plays selected calming videos in full screen.
+    \item \textbf{Coloring Mode}
+
+    interactive coloring activity with simple tools (blue/green brush, eraser, clear, next page).
+    \item \textbf{Stop / Home Mode}
+    returns to the main screen
+\end{itemize}
+
+\subsubsection{Flask API for Remote Control}
+To enable mobile control, the Raspberry Pi runs a Flask server exposing RESTful endpoints such as:\\[0.01cm]
+\textbf{/health} to verify system availability\\[0.01cm]
+\textbf{/set\_mode} to switch between modes (breathing/video/coloring/stop) and select specific video content.\\[0.01cm]
+
+\subsection{Mobile Application Software}
+The mobile application was developed using Flutter to provide specialists with a simple interface for session monitoring and interactive screen control, as shown in Figure~\ref{fig:mobile_app}.
+
+The application communicates with the Raspberry Pi interactive screen via HTTP requests over the local Wi-Fi network to control calming modes such as breathing exercises, videos, and coloring activities.
+
+The mobile application also presents real-time stress levels and sensor data collected from the wearable device, allowing specialists to monitor the child’s state throughout the session.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figure/app2.jpeg}
+    \caption{Mobile application interface for real-time monitoring and screen control}
+    \label{fig:mobile_app}
+\end{figure}
+
+
+\subsection{Telegram Bot Notification Workflow}
+To deliver stress alerts when the mobile application is inactive, a Telegram Bot–based notification system was established. A bot was created using BotFather, generating a unique authentication token. Specialists provide their Telegram chat IDs to enable direct message delivery, as shown in Figure~\ref{fig:telegram_workflow},
+
+Stress detection is performed at the wearable device level; upon detecting moderate or high stress, an HTTP request is sent to the Telegram Bot API, triggering an alert notification. A 30-second cooldown interval is enforced between consecutive alerts to prevent notification flooding while ensuring timely intervention.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=0.5\textheight]{figure/telegram.drawio.png}
+    \caption{Telegram bot setup}
+    \label{fig:telegram_workflow}
+\end{figure}
+
+
+
+\subsection{Implementation Issues}
+\begin{enumerate}
+    \item One challenge was differentiating stress-related physiological responses from strong physical activity and repetitive movements in children with autism. Both can elevate heart rate and GSR, but their motion patterns are distinct. This was resolved by incorporating motion intensity data from the MPU6050 sensor into the stress detection logic, improving the classification of stress, strong activity, or stimming movements.
+
+    % \item During the initial implementation, connecting the MAX30102 heart rate sensor and the MPU6050 motion sensor on the same I2C bus led to unstable readings and sensor failures. This issue was fixed by using a timing-based scheduling method to read each sensor at controlled intervals, preventing bus contention.
+
+    \item GSR readings were initially prone to false stress detections due to noise from hand movement and sensor contact variations, so an (Exponential Moving Average) EMA smoothing technique was employed.
+    
+    \item To ensure that stress alerts are delivered regardless of the mobile application’s state, a Telegram Bot–based notification mechanism was implemented, enabling push-style notifications instead of in-app alerts.
+\end{enumerate}
+
 \section{Summary}
-During this semester, we prepared the Introduction chapter. In Chapter One we wrote the project's background, problem statement, aims, objectives, requirements, system description, and limitations. We also completed Chapter Two, where we provide an overview of definition and classifications for Autism, and sensory processing difficulties in Autistic children and a literature review that compares our project to similar ones. Finally, in Chapter Three we outline the project’s design, encompassing both hardware and software aspects, discuss design choices, the conceptual background of the software, sequence diagram and presents a schematic diagram.
+In this chapter we reviewed the hardware and software implementation each component was fully explained, then we discussed the issues and challenges we faced during the implementation phase. 
 
+\chapter{Testing and Results }
+
+\section{Preface }
+The testing of all system components and the results will be covered in this chapter. 
+
+\section{Validation and Testing}
+The validation process focused on unit testing and integration testing of the system components. Each module was tested independently to ensure correct functionality before validating the complete system workflow.
+\subsection{Hardware Unit Testing}
+This section discusses the testing process of each of our hardware components.
+
+\subsubsection{ESP32 Wearable Module}
+The ESP32-C3 microcontroller was tested as the processing unit of the wearable stress monitoring device. The ESP32 is responsible for acquiring physiological sensor data, processing stress levels locally, and communicating directly with the mobile application over a local Wi-Fi network.
+
+\subsubsection{Heart Rate Sensor (MAX30102)}
+The heart rate sensor was tested for accuracy in heart rate acquisition, including I2C communication verification with the ESP32, real-time measurements at rest, and monitoring of signal stability during minor hand movements. The sensor delivered consistent and reliable readings, deemed suitable for stress detection.
+
+\subsubsection{Galvanic Skin Response (GSR) Sensor}
+To verify that the GSR sensor readings were correct and meaningful, we performed a set of validation checks focusing on signal plausibility and artifact behavior. First, the sensor output was logged while the subject was seated and relaxed to confirm a stable baseline (no drifting or saturation). The raw ADC values were inspected to ensure they remained within the valid range and did not clip at 0 or at the ADC maximum during normal contact.
+
+Next, we verified that the signal responded in the expected direction: when contact pressure increased or the skin became slightly more moist, the measured conductance increased smoothly, while removing the finger (loss of contact) produced a clear abrupt change and unstable/noisy values. These scenarios were intentionally introduced to confirm that the system can detect contact-related artifacts and that the measured variations were not random noise.
+
+Finally, baseline-relative normalization was verified by repeating the calibration procedure multiple times and confirming that the computed GSR ratio remained close to 1.0
+
+\subsubsection{Motion Sensor (MPU6050)}
+The MPU6050 motion sensor was tested and verified by recording motion data at 50~Hz under controlled REST (R), ACTIVITY (A), and STIMMING (S) conditions, as shown in Figure~\ref{fig:motion_values}. During REST, motion features remained low and stable ($A_{\text{rms}} \approx 0.33$, $B_{\text{vib}} < 0.08$, $C_{\text{gyro,rms}} \approx 0.04$), confirming correct baseline behavior. During ACTIVITY, feature values increased significantly ($A_{\text{rms}} > 4.0$, $C_{\text{gyro,rms}} > 3.0$), while STIMMING produced intermediate acceleration with elevated vibration ($B_{\text{vib}} > 0.9$). The clear separation between these ranges verified correct sensor readings and validated the motion-aware threshold logic, which successfully reduced false stress detection caused by physical activity.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{figure/motionvaluse.jpeg}
+    \caption{Sample Motion Feature Values Extracted From MPU6050 Measurements.}
+    \label{fig:motion_values}
+\end{figure}
+
+
+
+\subsubsection{NeoPixel LED Indicator}
+The NeoPixel LED ring was tested as a visual timer and feedback mechanism for activity sessions. As shown in Figure~\ref{fig:neopixel_timer} (a), the LEDs were used to represent the remaining time of activities. As shown in Figure~\ref{fig:neopixel_timer}(b) and (c), the LEDs progressively turned off to indicate the elapsed session time. Color changes to orange and blinking patterns indicated the final minute of the session. The NeoPixel timer responded accurately to timer updates sent from the mobile application.
+
+\clearpage
+\begin{figure}[h]
+    \centering
+
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[height=4cm]{figure/neopixelallled.jpeg}
+        \caption{Full timer display}
+        \label{fig:neopixel_a}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[height=4cm]{figure/neopixelorange.jpeg}
+        \caption{Final-Minute Warning Orange}
+        \label{fig:neopixel_b}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.32\textwidth}
+        \centering
+        \includegraphics[height=4cm]{figure/neopixellastmin.jpeg}
+        \caption{Final-minute warning blinking}
+        \label{fig:neopixel_c}
+    \end{subfigure}
+
+    \caption{NeoPixel LED Timer Behavior During Activity Sessions}
+    \label{fig:neopixel_timer}
+\end{figure}
+
+\subsubsection{Lithium Battery and Power Consumption}
+The wearable device is powered by a rechargeable lithium battery, which was tested under normal operating conditions. After a full charge, the system operated continuously for approximately 4–5 hours while running all sensors, Wi-Fi communication, and LED indicators. No significant performance degradation was observed during the discharge period. This battery life is sufficient for short monitoring and therapy sessions.
+
+\subsubsection{Raspberry Pi}
+The Raspberry Pi was tested as the central unit responsible for displaying calming visual and auditory content, including network connectivity over the local Wi-Fi network, communication with the Flutter mobile application via HTTP requests.\\[0.1cm]
+
+As shown in Figure~\ref{fig:two_images}, Therapist Control in flutter app, when click the start button on mode 1, show breathing in screen (is show flower image with voice prompt smell the flower and candle image with voice prompt Blow out the candle), but the voice in arabic,  when click any button on mode 2  displays calming videos in screen that support sensory regulation and relaxation for children with autism, and when click the start button on mode 3 displays coloring.The Raspberry Pi passed all tests successfully and operated.
+
+\begin{figure}[H]
+    \centering
+
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figure/Therapist Control.jpeg}
+        \caption{Therapist Control Interface in the Flutter Mobile Application}
+        \label{fig:thear_app}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}[t]{0.49\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{figure/coloring.jpeg}
+        \caption{Example of Interactive Screen Displaying the Coloring Mode}
+        \label{fig:csreen_color}
+    \end{subfigure}
+
+    \caption{Mobile Application Control and Interactive Screen Operation}
+    \label{fig:two_images}
+\end{figure}
+
+
+\subsection{Software Unit Testing}
+This section summarizes the testing procedures for the software components of the AutiSense system.
+
+\subsubsection{Mobile Application Testing}
+The mobile application was developed to support system interaction through multiple functional views. These include device connection setup using IP addresses, real-time monitoring of physiological sensor data received from the ESP32, manual control of the NeoPixel activity timer for session management, and selection of calming modes displayed on the Raspberry Pi screen. Detailed screenshots of the mobile application interfaces used during the testing phase are presented in Appendix~A.
+
+
+\subsubsection{Notification System Testing}
+As shown in Figure~\ref{fig:stress_alert}, the Telegram Bot notification system was tested to ensure specialists receive alerts during elevated stress levels detected by the ESP32 wearable device. Testing included verifying alert delivery during high-stress events. All notifications were delivered successfully with minimal latency, confirming reliable real-time alerting through the Telegram platform.
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=4.5cm]{figure/telegrambotnotification.jpeg}
+    \caption{Stress Notification Received on The Tableelegram Bot}
+    \label{fig:stress_alert}
+\end{figure}
+
+\subsection{Stress and Motion Classification Performance Evaluation}
+To evaluate the real-time stress and motion classification performance of the system, controlled scenario-based experiments were conducted. Serial monitor logs were recorded under five predefined conditions: Normal (no movement), Stimming (no stress), Activity(physical movement), Moderate Stress, and High Stress.
+
+Each condition was tested multiple times to ensure consistency and reliability. Representative samples from the recorded data are presented in the following subsections to demonstrate the classification accuracy of the system.
+
+\subsubsection{Normal State (No Movement)} \label{subsec:normal_state}
+
+\textbf{Baseline HR:} 60.1 BPM \\
+\textbf{Baseline GSR:} 2.363 V \\
+
+\begin{table}[h]
+\centering
+\caption{Normal State (No Movement) Samples}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{Sample} & \textbf{HR (BPM)} & \textbf{GSR (V)} & \textbf{GSR \%} & \textbf{Motion} & \textbf{State} \\
+\hline
+1 & 68.0 & 2.367 & 0.16\% & LOW & NORMAL \\
+2 & 72.8 & 2.367 & 0.16\% & LOW & NORMAL \\
+3 & 80.0 & 2.367 & 0.15\% & LOW & NORMAL \\
+4 & 68.0 & 2.368 & 0.18\% & LOW & NORMAL \\
+5 & 72.8 & 2.367 & 0.17\% & LOW & NORMAL \\
+\hline
+\end{tabular}
+\label{tab:normal_samples}
+\end{table}
+
+\textbf{Analysis:} GSR variation remained below 0.2\%, and HR increase did not exceed the stress thresholds. The system correctly classified all samples as \textbf{NORMAL}.
+
+%========================================================
+\clearpage
+\subsubsection{Stimming (No Stress)} \label{subsec:stimming_state}
+
+\begin{table}[h]
+\centering
+\caption{Stimming Samples}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{Sample} & \textbf{HR (BPM)} & \textbf{GSR (V)} & \textbf{GSR \%} & \textbf{Motion} & \textbf{State} \\
+\hline
+1 & 117.1 & 2.367 & 0.16\% & STIMMING & STIMMING \\
+2 & 117.1 & 2.368 & 0.18\% & STIMMING & STIMMING \\
+3 & 125.0 & 2.367 & 0.16\% & STIMMING & STIMMING \\
+4 & 117.1 & 2.365 & 0.07\% & STIMMING & STIMMING \\
+5 & 123.9 & 2.367 & 0.15\% & STIMMING & STIMMING \\
+\hline
+\end{tabular}
+\label{tab:stimming_samples}
+\end{table}
+
+\textbf{Analysis:} Despite elevated heart rate due to movement, the GSR ratio remained close to baseline. The motion-aware filter successfully prevented false stress detection, and the system correctly classified the condition as \textbf{STIMMING}.
+
+%========================================================
+\subsubsection{Activity (Physical Movement)} \label{subsec:activity_state}
+
+\begin{table}[h]
+\centering
+\caption{Physical Activity Samples}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+\textbf{Sample} & \textbf{HR (BPM)} & \textbf{GSR (V)} & \textbf{GSR \%} & \textbf{Motion} & \textbf{State} \\
+\hline
+1 & 123.9 & 2.364 & 0.03\% & ACTIVITY & ACTIVITY \\
+2 & 123.9 & 2.366 & 0.10\% & ACTIVITY & ACTIVITY \\
+3 & 123.9 & 2.368 & 0.20\% & ACTIVITY & ACTIVITY \\
+4 & 140.0 & 2.368 & 0.18\% & ACTIVITY & ACTIVITY \\
+5 & 125.0 & 2.367 & 0.16\% & ACTIVITY & ACTIVITY \\
+\hline
+\end{tabular}
+\label{tab:activity_samples}
+\end{table}
+
+\textbf{Analysis:} Although heart rate increased significantly during movement, GSR variation remained below the stress thresholds. The system correctly classified the condition as \textbf{ACTIVITY} rather than stress.
+
+%========================================================
+\subsubsection{Moderate Stress} \label{subsec:moderate_stress}
+
+\begin{table}[h]
+\centering
+\caption{Moderate Stress Samples}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Sample} & \textbf{HR (BPM)} & \textbf{GSR \%} & \textbf{Motion} & \textbf{State} \\
+\hline
+1 & 82.0 & 2.3\% & LOW & MODERATE \\
+2 & 85.5 & 3.1\% & LOW & MODERATE \\
+3 & 90.0 & 3.8\% & LOW & MODERATE \\
+4 & 88.0 & 2.5\% & LOW & MODERATE \\
+5 & 92.0 & 4.2\% & LOW & MODERATE \\
+\hline
+\end{tabular}
+\label{tab:moderate_samples}
+\end{table}
+
+\textbf{Analysis:} Both HR ratio ($> 20\%$ above baseline) and GSR ratio ($> 2\%$) exceeded the moderate thresholds, resulting in correct \textbf{MODERATE STRESS} classification.
+
+%========================================================
+\subsection{High Stress} \label{subsec:high_stress}
+
+\begin{table}[h]
+\centering
+\caption{High Stress Samples}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{Sample} & \textbf{HR (BPM)} & \textbf{GSR \%} & \textbf{Motion} & \textbf{State} \\
+\hline
+1 & 100.0 & 5.1\% & LOW & HIGH \\
+2 & 110.0 & 6.4\% & LOW & HIGH \\
+3 & 120.0 & 7.2\% & LOW & HIGH \\
+4 & 105.0 & 5.8\% & LOW & HIGH \\
+5 & 115.0 & 6.9\% & LOW & HIGH \\
+\hline
+\end{tabular}
+\label{tab:high_samples}
+\end{table}
+
+\textbf{Analysis:} HR exceeded 40\% above baseline and the GSR ratio exceeded 5\%, triggering \textbf{HIGH STRESS} detection and a Telegram notification (with cooldown enforcement).
+
+\subsection{Integrated System Workflow Testing}
+Each functionality of the AutiSense system was tested independently to ensure correct performance and reliable integration between system components. The testing workflow focused on the interaction between the ESP32 wearable device, the mobile application, the Raspberry Pi calming screen, and the notification system. The sequence of operations, including physiological data acquisition, stress level classification, mobile application interaction, activity timer control, calming mode selection, and alert notification delivery, was executed step-by-step. The outcomes of these tests are summarized in Table 5.1.
+\clearpage
+
+\begin{table}[h]
+\centering
+\caption{Testing Table}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{tabular}{|p{5cm}|p{9cm}|}
+\hline
+\textbf{Case} & \textbf{Result} \\
+\hline
+
+Load mobile application interface &
+The application loads correctly and displays all expected interface elements. \\
+\hline
+
+Connect to ESP32 wearable device &
+Successful connection established using the ESP32 IP address, enabling real-time data retrieval. \\
+\hline
+
+Display real-time sensor data &
+Heart rate, GSR, motion state, and stress level are displayed correctly in real time. \\
+\hline
+
+Stress level classification &
+The system accurately classifies stress levels into calm, moderate stress, and high stress states. \\
+\hline
+
+Motion-aware filtering &
+Physical activity and stimming movements are correctly distinguished from stress-related physiological changes. \\
+\hline
+
+NeoPixel activity timer control &
+Activity session duration is successfully updated from the mobile application and reflected on the NeoPixel LED timer. \\
+\hline
+
+Connect to Raspberry Pi screen &
+Successful connection established using the Raspberry Pi IP address for screen control. \\
+\hline
+
+Calming mode selection &
+Selected calming modes are correctly displayed on the Raspberry Pi screen. \\
+\hline
+
+Telegram alert notification &
+High stress alerts are delivered successfully via the Telegram bot with an enforced cooldown interval. \\
+\hline
+
+System stability &
+The system operates continuously without crashes or data loss during testing sessions. \\
+\hline
+
+\end{tabular}
+\label{tab:mobile_testing}
+\end{table}
+
+\section{Summary}
+In this chapter, the Hardware and Software unit testing and validation processes of the AutiSense system were presented. Overall, the testing results demonstrate that AutiSense operates effectively as a stress monitoring and support system for children with Autism Spectrum Disorder.
+
+
+
+\chapter{Conclusion and Future Work}
 \section{Conclusion}
-During this semester, we have completed the analysis and design of the parts of the project as well as designed the entire architecture of the project. The step that was done is the analysis part, where we analyzed some assumptions regarding children with Autism Spectrum Disorder (ASD) in terms of difficulty to emotionally handle and change between one task to another. In addition, based on the analysis, we defined what will be the goals of the proposed system. Moreover, we have designed the entire architecture of the system as well as chosen which hardware and software components will be in the system. We have designed detailed designs of diagrams for the wearable device and the interactive screen.\\[0.1cm]
+In this work, we presented AutiSense, a smart assistive system aiming at supporting ASD children by real-time stress monitoring and adaptive calming interventions. The proposed system is composed of one wearable device, one interactive screen, and one mobile application to make the support solution complete and responsive.\\[0.1cm]
 
-For next semester, we plan to begin the implementation of the prototype of the system and test and evaluate to confirm the system’s functionality and reliability.
+Applying pattern analysis to Heart Rate (HR), Galvanic Skin Response (GSR), and motion data, this system can detect states of stress while differentiating emotional stress from physical activity or repetitive movements. Upon identification of stress, at appropriate times, AutiSense will provide various formats of visual and auditory feedback and alert the caregivers accordingly when necessary.
 
-\printbibliography[title={References}, heading=bibintoc]
+\section{Future Work}
+\begin{itemize}
+    \item  
+    Include a front-facing camera positioned in front of the child; by capturing the face, it will be able to pick up facial expressions and behavioral cues. The system could analyze visual features such as facial emotions, gaze direction, or head movements to enhance the accuracy of stress detection and give a better understanding of the child's emotional state.
+    
+    \item 
+    Optimizing the wearable design so that it becomes smaller in size and more comfortable.
+\end{itemize}
 
-% أول صفحة مع العنوان + إدراجها في الفهرس
 \includepdf[
   pages=1,
   pagecommand={
@@ -1329,49 +1873,31 @@ For next semester, we plan to begin the implementation of the prototype of the s
     \addcontentsline{toc}{chapter}{Appendix}
     \thispagestyle{plain}
   }
-]{aiedit.pdf}
+]{appendixapp.pdf}
 
 % باقي الصفحات (2 و 3) بدون عنوان إضافي
 \includepdf[
   pages=2-,
   pagecommand={\thispagestyle{plain}} % يضيف ترقيم للصفحات المتبقية
-]{aiedit.pdf}
+]{appendixapp.pdf}
+% ---------- ملف PDF بعد الصور ----------
 
-% \printbibliography[title={References}]
+% أول صفحة مع العنوان + إدراجها في الفهرس
+\includepdf[
+  pages=1,
+  pagecommand={
+    \phantomsection
+    \thispagestyle{plain}
+  }
+]{appendixai.pdf}
 
-% \renewcommand{\bibname}{References} % للكتب والتقارير
+% باقي الصفحات (2 و 3) بدون عنوان إضافي
+\includepdf[
+  pages=2-,
+  pagecommand={\thispagestyle{plain}} % يضيف ترقيم للصفحات المتبقية
+]{appendixai.pdf}
 
-
-% \chapter*{Appendix}
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.7\textwidth]{}
-% \end{figure}
-
-
-% دمج صفحة PDF كجدول تحت النص
-% \begin{tikzpicture}[remember picture,overlay]
-% \node[anchor=north,yshift=-2cm] at (current page.north) {%
-%     \includegraphics[page=1, width=\textwidth]{AI-Usage.pdf}%
-% };
-% \end{tikzpicture}
-
-% % ترقيم الصفحة
-% \thispagestyle{plain}
-
-% Appendix
-% \includepdf[pages=-, pagecommand={\thispagestyle{plain}}]{AI-Usage.pdf}
-
-% \chapter*{Appendix}
-% \addcontentsline{toc}{chapter}{Appendix}
-% \begin{tikzpicture}[remember picture,overlay]
-% \node[anchor=north] at (current page.north) {
-%     \includegraphics[page=1, width=\textwidth]{AI-Usage.pdf}
-% };
-% \end{tikzpicture}
-
-% % ترقيم الصفحة
-% \thispagestyle{plain}
+\printbibliography[title={References}, heading=bibintoc]
 
 
 

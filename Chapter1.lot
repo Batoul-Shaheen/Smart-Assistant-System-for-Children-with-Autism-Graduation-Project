@@ -1,17 +1,25 @@
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces Project Timeline for the First Semester}}{13}{table.caption.8}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces Project Timeline}}{5}{table.caption.9}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Levels of Support in Autism Spectrum Disorder}}{16}{table.caption.9}%
-\contentsline {table}{\numberline {2.2}{\ignorespaces Comparison of Sensory Processing Difficulties in Autistic Children}}{17}{table.caption.10}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces Comparison with other projects}}{19}{table.caption.11}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Levels Of Support In Autism Spectrum Disorder}}{8}{table.caption.10}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Comparison Of Sensory Processing Difficulties In Autistic Children}}{9}{table.caption.11}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Comparison With Other Projects}}{12}{table.caption.12}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Differences between ESP-WROOM-32, LilyPad Arduino, and Raspberry Pi Zero W}}{22}{table.caption.12}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Differences between the Grove Galvanic Skin Response (GSR) sensor \newline and Galvanic Skin Response (GSR) Shimmer3 sensor}}{23}{table.caption.13}%
-\contentsline {table}{\numberline {3.3}{\ignorespaces Differences between the MAX30102 sensor and Pulse sensor}}{24}{table.caption.14}%
-\contentsline {table}{\numberline {3.4}{\ignorespaces Differences between the MPU6050 sensor and ADXL335 sensor}}{25}{table.caption.15}%
-\contentsline {table}{\numberline {3.5}{\ignorespaces Differences between the WS2812 NeoPixel Ring and APA102}}{26}{table.caption.16}%
-\contentsline {table}{\numberline {3.6}{\ignorespaces Differences between Raspberry Pi 4B, NVIDIA Jetson Nano}}{27}{table.caption.17}%
-\contentsline {table}{\numberline {3.7}{\ignorespaces Differences between standard LCD and TFT LCD.}}{28}{table.caption.18}%
-\contentsline {table}{\numberline {3.8}{\ignorespaces Differences between USB Speaker and Bluetooth Speaker Module (MH-M28)}}{29}{table.caption.19}%
-\contentsline {table}{\numberline {3.9}{\ignorespaces Differences between Communication protocols}}{32}{table.caption.21}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces Comparison of ESP32 3C ZERO and LilyPad Arduino}}{15}{table.caption.13}%
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison of Grove Galvanic Skin Response (GSR) Sensor \newline and Galvanic Skin Response (GSR) Shimmer3 Sensor}}{16}{table.caption.14}%
+\contentsline {table}{\numberline {3.3}{\ignorespaces Comparison of MAX30102 Sensor and Pulse Sensor}}{17}{table.caption.15}%
+\contentsline {table}{\numberline {3.4}{\ignorespaces Comparison Of MPU6050 Sensor and ADXL335 Sensor}}{18}{table.caption.16}%
+\contentsline {table}{\numberline {3.5}{\ignorespaces Comparison Of WS2812 NeoPixel Ring and APA102}}{19}{table.caption.17}%
+\contentsline {table}{\numberline {3.6}{\ignorespaces Comparison of Raspberry Pi 3 Model B and NVIDIA Jetson Nano}}{20}{table.caption.18}%
+\contentsline {table}{\numberline {3.7}{\ignorespaces Comparison Of High-Definition Multimedia Interface (HDMI) Touch Screen and Thin-Film Transistor Liquid Crystal Display (TFT) LCD.}}{21}{table.caption.19}%
+\contentsline {table}{\numberline {3.8}{\ignorespaces Comparison of USB Speaker and Bluetooth Speaker }}{22}{table.caption.20}%
+\contentsline {table}{\numberline {3.9}{\ignorespaces Differences Between Communication Protocols}}{24}{table.caption.21}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Normal State (No Movement) Samples}}{46}{table.caption.35}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Stimming Samples}}{47}{table.caption.36}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Physical Activity Samples}}{47}{table.caption.37}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Moderate Stress Samples}}{47}{table.caption.38}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces High Stress Samples}}{48}{table.caption.39}%
+\contentsline {table}{\numberline {5.6}{\ignorespaces Testing Table}}{49}{table.caption.40}%
 \addvspace {10\p@ }
