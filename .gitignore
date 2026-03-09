@@ -1,0 +1,39 @@
+*
+
+!AutiSense.pdf
+
+# لا تتجاهل gitignore نفسه
+!.gitignore
+
+# *.tex
+# *.bib
+# *.aux
+# *.log
+# *.out
+# *.toc
+# *.sty
+# *.cls
+# *.png
+# *.jpg
+# *.jpeg
+# Abstract (2).pdf
+# appendixai.pdf
+# appendixapp.pdf
+# Certification2.pdf
+# *.acn
+# *.acr
+# *.alg
+# *.bbl
+# *.bbl-SAVE-ERROR
+# *.bcf
+# *.blg
+# *.fdb_latexmk
+# *.fls
+# *.glg
+# *.glo
+# *.gls
+# *.glsdefs
+# *.ilg
+# *.ist
+# *.lof
+# *.lot
