@@ -1,4 +1,4 @@
-# AutiSense – Smart Assistant System for Children with Autism Spectrum Disorder
+# 🧩 AutiSense – Smart Assistant System for Children with Autism Spectrum Disorder
 
 AutiSense is an assistive system designed to support children with Autism Spectrum Disorder (ASD) by detecting stress in real time and providing calming interventions.
 
@@ -6,7 +6,7 @@ The system combines a wearable stress-monitoring device, an interactive calming 
 
 ---
 
-# System Overview
+# 🧩 System Overview
 
 AutiSense monitors physiological signals and detects emotional stress early, helping caregivers provide timely support during stressful situations or activity transitions.
 
@@ -14,7 +14,7 @@ The system consists of three main subsystems.
 
 ---
 
-# Wearable Stress Detection Device
+# 🧩 Wearable Stress Detection Device
 
 A wearable wrist device used by the child to continuously monitor physiological signals.
 
@@ -43,7 +43,7 @@ Motion analysis is used to distinguish between:
 
 ---
 
-# Interactive Calming Screen
+# 🧩 Interactive Calming Screen
 
 An external interactive screen placed in the child's environment.
 
@@ -60,7 +60,7 @@ A **Bluetooth speaker** provides soothing audio instructions and relaxing sounds
 
 ---
 
-# Mobile Application
+# 🧩 Mobile Application
 
 A mobile application developed using **Flutter** allows specialists to:
 
@@ -73,7 +73,7 @@ The mobile application communicates with the system using **HTTP requests over a
 
 ---
 
-# Stress Alert Notifications
+# 🧩 Stress Alert Notifications
 
 When moderate or high stress is detected, the wearable device automatically sends alerts using a **Telegram Bot notification system**.
 
@@ -83,7 +83,7 @@ A cooldown interval is applied between alerts to prevent notification flooding.
 
 ---
 
-# Stress Detection Method
+# 🧩 Stress Detection Method
 
 AutiSense uses a **baseline-based threshold detection approach**.
 
@@ -99,7 +99,7 @@ This method allows reliable real-time stress detection with low computational co
 
 ---
 
-# Technologies Used
+# 🧩 Technologies Used
 
 ### Hardware
 
@@ -120,7 +120,7 @@ This method allows reliable real-time stress detection with low computational co
 
 ---
 
-# System Communication
+# 🧩 System Communication
 
 Communication between system components is performed through:
 
@@ -130,7 +130,7 @@ Communication between system components is performed through:
 
 ---
 
-# Full Thesis
+# 🧩 Full Thesis
 
 The complete graduation project documentation is available here:
 
@@ -138,7 +138,7 @@ The complete graduation project documentation is available here:
 
 ---
 
-# Authors
+# 🧩 Authors
 
 Computer Systems Engineering
 Palestine Polytechnic University
