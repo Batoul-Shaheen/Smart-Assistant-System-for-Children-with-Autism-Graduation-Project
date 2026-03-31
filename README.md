@@ -143,10 +143,7 @@ The complete graduation project documentation is available here:
 Computer Systems Engineering
 Palestine Polytechnic University
 
-👩‍💻 **Batool Shaheen**
-LinkedIn:
-https://www.linkedin.com/in/batool-shaheen-14a583252/
+Contact with us in LinkedIn:
+- 👩‍💻 [Batool Shaheen](https://www.linkedin.com/in/batool-shaheen-14a583252/)
+- 👩‍💻 [Raghad Darabee](https://www.linkedin.com/in/raghad-darabee-2b73b4220/)
 
-👩‍💻 **Raghad Darabee**
-LinkedIn:
-https://www.linkedin.com/in/raghad-darabee-2b73b4220/
